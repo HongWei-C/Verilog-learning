@@ -1,0 +1,48 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/STUDY/Modelsim/win64
+vfifo
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 9;kCWdc^987^OAfH9Lg7H0
+ITcdgJ3j?6]NhG]kNB<i`A0
+Z1 dD:/STUDY/GitHubWork/Verilog-learning/06_fifo
+w1595773575
+8D:/STUDY/GitHubWork/Verilog-learning/06_fifo/fifo.v
+FD:/STUDY/GitHubWork/Verilog-learning/06_fifo/fifo.v
+L0 2
+Z2 OL;L;10.4;61
+!s108 1595773580.662000
+!s107 D:/STUDY/GitHubWork/Verilog-learning/06_fifo/fifo.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/STUDY/GitHubWork/Verilog-learning/06_fifo/fifo.v|
+!i113 0
+Z3 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vfifo_tb
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 X4@3dmdXkPPimJgOX4YC;0
+IUzoJOMGg^jJm>^Hd5c]JE1
+R1
+w1595773267
+8D:/STUDY/GitHubWork/Verilog-learning/06_fifo/fifo_tb.v
+FD:/STUDY/GitHubWork/Verilog-learning/06_fifo/fifo_tb.v
+L0 1
+R2
+!s108 1595773580.587000
+!s107 D:/STUDY/GitHubWork/Verilog-learning/06_fifo/fifo_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/STUDY/GitHubWork/Verilog-learning/06_fifo/fifo_tb.v|
+!i113 0
+R3
