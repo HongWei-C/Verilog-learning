@@ -1,0 +1,48 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/STUDY/GitHubWork/Verilog-learning/03_shift_4
+vs2p
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 a>ddIo;UgO^Si@;AkGD=50
+I[hj=GgSn7IROiDi_Kh;o_1
+Z1 dD:/STUDY/GitHubWork/Verilog-learning/04_s2p
+w1595681166
+8D:/STUDY/GitHubWork/Verilog-learning/04_s2p/s2p.v
+FD:/STUDY/GitHubWork/Verilog-learning/04_s2p/s2p.v
+L0 1
+Z2 OL;L;10.4;61
+!s108 1595681172.123000
+!s107 D:/STUDY/GitHubWork/Verilog-learning/04_s2p/s2p.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/STUDY/GitHubWork/Verilog-learning/04_s2p/s2p.v|
+!i113 0
+Z3 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vs2p_tb
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 M`7ieKUH58XKSiHDA;z0f3
+I36j5c>8MK?9PfIJ8?4gQZ0
+R1
+w1595680656
+8D:/STUDY/GitHubWork/Verilog-learning/04_s2p/s2p_tb.v
+FD:/STUDY/GitHubWork/Verilog-learning/04_s2p/s2p_tb.v
+L0 1
+R2
+!s108 1595681172.048000
+!s107 D:/STUDY/GitHubWork/Verilog-learning/04_s2p/s2p_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/STUDY/GitHubWork/Verilog-learning/04_s2p/s2p_tb.v|
+!i113 0
+R3

@@ -1,0 +1,15 @@
+D:/STUDY/GitHubWork/Verilog-learning/02_mux_21/mux_21.v {1 {vlog -work work -vopt -stats=none D:/STUDY/GitHubWork/Verilog-learning/02_mux_21/mux_21.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module mux_21
+
+Top level modules:
+	mux_21
+
+} {} {}} D:/STUDY/GitHubWork/Verilog-learning/02_mux_21/mux_21_tb.v {1 {vlog -work work -vopt -stats=none D:/STUDY/GitHubWork/Verilog-learning/02_mux_21/mux_21_tb.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module mux_21_tb
+
+Top level modules:
+	mux_21_tb
+
+} {} {}}

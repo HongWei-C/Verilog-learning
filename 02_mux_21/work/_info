@@ -1,0 +1,48 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/STUDY/GitHubWork/Verilog-learning/01_DFF
+vmux_21
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 Z4idPjEZ@WiK`clo1>?Al1
+I_cf`07>9Bg5lHPTNHf8fd3
+Z1 dD:/STUDY/GitHubWork/Verilog-learning/02_mux_21
+w1595669933
+8D:/STUDY/GitHubWork/Verilog-learning/02_mux_21/mux_21.v
+FD:/STUDY/GitHubWork/Verilog-learning/02_mux_21/mux_21.v
+L0 1
+Z2 OL;L;10.4;61
+!s108 1595682234.177000
+!s107 D:/STUDY/GitHubWork/Verilog-learning/02_mux_21/mux_21.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/STUDY/GitHubWork/Verilog-learning/02_mux_21/mux_21.v|
+!i113 0
+Z3 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vmux_21_tb
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 [^[2?c`mB9=06135SXhmD0
+IRB?A`CG1TmBOlaHjoUL4Y1
+R1
+w1595669680
+8D:/STUDY/GitHubWork/Verilog-learning/02_mux_21/mux_21_tb.v
+FD:/STUDY/GitHubWork/Verilog-learning/02_mux_21/mux_21_tb.v
+L0 1
+R2
+!s108 1595682234.102000
+!s107 D:/STUDY/GitHubWork/Verilog-learning/02_mux_21/mux_21_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/STUDY/GitHubWork/Verilog-learning/02_mux_21/mux_21_tb.v|
+!i113 0
+R3

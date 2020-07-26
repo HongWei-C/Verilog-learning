@@ -1,0 +1,23 @@
+# Compile of mux_21_tb.v was successful.
+# Compile of mux_21.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -novopt work.mux_21_tb
+# vsim -gui D:\STUDY\GitHubWork\Verilog-learning\02_mux_21\mux_21.mpf 
+# Start time: 21:04:59 on Jul 25,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing D:/STUDY/GitHubWork/Verilog-learning/02_mux_21/work.mux_21_tb
+# Loading work.mux_21_tb
+# Refreshing D:/STUDY/GitHubWork/Verilog-learning/02_mux_21/work.mux_21
+# Loading work.mux_21
+add wave  \
+sim:/mux_21_tb/in_a_tb \
+sim:/mux_21_tb/in_b_tb \
+sim:/mux_21_tb/out_tb \
+sim:/mux_21_tb/sel_tb
+run -all
+# ** Note: $finish    : D:/STUDY/GitHubWork/Verilog-learning/02_mux_21/mux_21_tb.v(21)
+#    Time: 102 ns  Iteration: 0  Instance: /mux_21_tb
+# 1
+# Break in Module mux_21_tb at D:/STUDY/GitHubWork/Verilog-learning/02_mux_21/mux_21_tb.v line 21
+quit -sim
