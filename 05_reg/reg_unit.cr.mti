@@ -1,0 +1,15 @@
+D:/STUDY/GitHubWork/Verilog-learning/05_reg/reg_unit.v {1 {vlog -work work -vopt -stats=none D:/STUDY/GitHubWork/Verilog-learning/05_reg/reg_unit.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module reg_unit
+
+Top level modules:
+	reg_unit
+
+} {} {}} D:/STUDY/GitHubWork/Verilog-learning/05_reg/reg_unit_tb.v {1 {vlog -work work -vopt -stats=none D:/STUDY/GitHubWork/Verilog-learning/05_reg/reg_unit_tb.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module reg_unit_tb
+
+Top level modules:
+	reg_unit_tb
+
+} {} {}}

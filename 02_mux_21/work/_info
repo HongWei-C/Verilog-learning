@@ -22,7 +22,7 @@ w1595669933
 FD:/STUDY/GitHubWork/Verilog-learning/02_mux_21/mux_21.v
 L0 1
 Z2 OL;L;10.4;61
-!s108 1595682234.177000
+!s108 1595730997.472000
 !s107 D:/STUDY/GitHubWork/Verilog-learning/02_mux_21/mux_21.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/STUDY/GitHubWork/Verilog-learning/02_mux_21/mux_21.v|
 !i113 0
@@ -41,7 +41,7 @@ w1595669680
 FD:/STUDY/GitHubWork/Verilog-learning/02_mux_21/mux_21_tb.v
 L0 1
 R2
-!s108 1595682234.102000
+!s108 1595730997.392000
 !s107 D:/STUDY/GitHubWork/Verilog-learning/02_mux_21/mux_21_tb.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/STUDY/GitHubWork/Verilog-learning/02_mux_21/mux_21_tb.v|
 !i113 0

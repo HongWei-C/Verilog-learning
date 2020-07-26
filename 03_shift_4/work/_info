@@ -22,7 +22,7 @@ w1595676438
 FD:/STUDY/GitHubWork/Verilog-learning/03_shift_4/shift_4.v
 L0 1
 Z2 OL;L;10.4;61
-!s108 1595681781.012000
+!s108 1595731039.725000
 !s107 D:/STUDY/GitHubWork/Verilog-learning/03_shift_4/shift_4.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/STUDY/GitHubWork/Verilog-learning/03_shift_4/shift_4.v|
 !i113 0
@@ -41,7 +41,7 @@ w1595676843
 FD:/STUDY/GitHubWork/Verilog-learning/03_shift_4/shift_4_tb.v
 L0 1
 R2
-!s108 1595681780.918000
+!s108 1595731039.648000
 !s107 D:/STUDY/GitHubWork/Verilog-learning/03_shift_4/shift_4_tb.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/STUDY/GitHubWork/Verilog-learning/03_shift_4/shift_4_tb.v|
 !i113 0
