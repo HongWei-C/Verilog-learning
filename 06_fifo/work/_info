@@ -23,21 +23,21 @@ r1
 !s85 0
 31
 !i10b 1
-!s100 NnLMmKFLhBjbIbh@QohNY1
-IOzo1efoo_eCG98:`]>>`H2
+!s100 VBz=[e79jb=CmCLCQeIaF3
+I[Cc96f[OBF9Y:N@QLa^Y`3
 Z2 dD:/STUDY/GitHubWork/Verilog-learning/06_fifo
-w1595837183
+w1595842598
 8fifo.v
 Ffifo.v
 L0 3
 Z3 OL;L;10.4;61
-!s108 1595837196.517000
+!s108 1595842602.751000
 !s107 fifo.v|
 !s90 -reportprogress|300|fifo.v|
 !i113 0
 Z4 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 vfifo_tb
-!s110 1595837127
+!s110 1595842379
 !i10b 1
 !s100 jB4M24I^FWKko3=;`cY:30
 In^`EBO2jCR^0Y33SUm9nN3
@@ -51,7 +51,7 @@ R3
 r1
 !s85 0
 31
-!s108 1595837127.824000
+!s108 1595842379.762000
 !s107 D:/STUDY/GitHubWork/Verilog-learning/06_fifo/fifo_tb.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/STUDY/GitHubWork/Verilog-learning/06_fifo/fifo_tb.v|
 !i113 0
@@ -70,7 +70,7 @@ w1595835514
 Ffifo_tb_dly.v
 L0 2
 R3
-!s108 1595837196.602000
+!s108 1595842602.830000
 !s107 fifo_tb_dly.v|
 !s90 -reportprogress|300|fifo_tb_dly.v|
 !i113 0
