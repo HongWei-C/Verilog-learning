@@ -38,4 +38,5 @@ update
 WaveRestoreZoom {470 ns} {802 ns}
 
 run -all
+break
 view wave
