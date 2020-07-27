@@ -35,10 +35,15 @@ module fifo_tb ();
     datain      = 8'h00;
     i           = 8'h00;
     #5;
-    while(i < 18) begin
+    while(i < 18) begin //输入18个数据
       #20 datain  = i;
       i           = i + 8'h01;
     end
+  end
+  
+  initial begin
+    $dumpfile("fifo_tb_wave.vcd");
+    $dumpvars;
   end
 
   wire        full;
