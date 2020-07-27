@@ -1,3 +1,4 @@
+`timescale 1ns / 100ps
 module reg_unit_tb ();
 
   reg         clk_tb;

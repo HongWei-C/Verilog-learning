@@ -1,3 +1,4 @@
+`timescale  1ns / 100ps
 module s2p_tb ();
 
 reg         nreset_tb;   //全局复位设置

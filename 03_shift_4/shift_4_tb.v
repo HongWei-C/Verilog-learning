@@ -1,3 +1,4 @@
+`timescale  1ns / 100ps
 module shift_4_tb();
 
   reg         rst_n_tb;

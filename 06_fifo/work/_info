@@ -7,42 +7,51 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-dD:/STUDY/Modelsim/win64
+Z0 dD:/STUDY/Modelsim/win64
+T_opt
+!s110 1595811529
+V?eOOm_0nbMD4[Y7O@_=[G1
+04 7 4 work fifo_tb fast 0
+=1-7c7635f40529-5f1e26c8-2c1-3d74
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.4;61
+R0
 vfifo
-Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
 r1
 !s85 0
 31
 !i10b 1
 !s100 9;kCWdc^987^OAfH9Lg7H0
 ITcdgJ3j?6]NhG]kNB<i`A0
-Z1 dD:/STUDY/GitHubWork/Verilog-learning/06_fifo
-w1595773575
+Z2 dD:/STUDY/GitHubWork/Verilog-learning/06_fifo
+w1595773981
 8D:/STUDY/GitHubWork/Verilog-learning/06_fifo/fifo.v
 FD:/STUDY/GitHubWork/Verilog-learning/06_fifo/fifo.v
 L0 2
-Z2 OL;L;10.4;61
-!s108 1595773580.662000
+Z3 OL;L;10.4;61
+!s108 1595811517.798000
 !s107 D:/STUDY/GitHubWork/Verilog-learning/06_fifo/fifo.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/STUDY/GitHubWork/Verilog-learning/06_fifo/fifo.v|
 !i113 0
-Z3 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z4 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 vfifo_tb
-R0
+R1
 r1
 !s85 0
 31
 !i10b 1
-!s100 X4@3dmdXkPPimJgOX4YC;0
-IUzoJOMGg^jJm>^Hd5c]JE1
-R1
-w1595773267
+!s100 lH41R;8?hl]Pl^LBjjcY33
+InB<QXMUWdalRK34=JOo?D3
+R2
+w1595811480
 8D:/STUDY/GitHubWork/Verilog-learning/06_fifo/fifo_tb.v
 FD:/STUDY/GitHubWork/Verilog-learning/06_fifo/fifo_tb.v
-L0 1
-R2
-!s108 1595773580.587000
+L0 2
+R3
+!s108 1595811517.714000
 !s107 D:/STUDY/GitHubWork/Verilog-learning/06_fifo/fifo_tb.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/STUDY/GitHubWork/Verilog-learning/06_fifo/fifo_tb.v|
 !i113 0
-R3
+R4

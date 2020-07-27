@@ -1,3 +1,4 @@
+`timescale  1ns / 100ps
 module mux_21_tb();
   reg       sel_tb;
   initial begin

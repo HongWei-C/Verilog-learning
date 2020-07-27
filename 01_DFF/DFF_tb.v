@@ -1,3 +1,4 @@
+`timescale  1ns / 100ps
 module DFF_tb ();
   reg         tb_clk;
   reg         tb_D;

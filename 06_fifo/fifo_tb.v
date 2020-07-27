@@ -1,3 +1,4 @@
+`timescale  1ns / 100ps
 module fifo_tb ();
   //clk 设置
   reg         clk;
