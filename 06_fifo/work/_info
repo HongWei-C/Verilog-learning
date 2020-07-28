@@ -26,12 +26,12 @@ r1
 !s100 VBz=[e79jb=CmCLCQeIaF3
 I[Cc96f[OBF9Y:N@QLa^Y`3
 Z2 dD:/STUDY/GitHubWork/Verilog-learning/06_fifo
-w1595842598
+w1595848589
 8fifo.v
 Ffifo.v
 L0 3
 Z3 OL;L;10.4;61
-!s108 1595842602.751000
+!s108 1595848616.557000
 !s107 fifo.v|
 !s90 -reportprogress|300|fifo.v|
 !i113 0
@@ -70,7 +70,7 @@ w1595835514
 Ffifo_tb_dly.v
 L0 2
 R3
-!s108 1595842602.830000
+!s108 1595848616.636000
 !s107 fifo_tb_dly.v|
 !s90 -reportprogress|300|fifo_tb_dly.v|
 !i113 0

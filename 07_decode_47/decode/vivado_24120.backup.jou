@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Jul 28 09:16:29 2020
+# Process ID: 24120
+# Current directory: D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18048 D:\STUDY\GitHubWork\Verilog-learning\07_decode_47\decode\decode.xpr
+# Log file: D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode/vivado.log
+# Journal file: D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode/decode.xpr

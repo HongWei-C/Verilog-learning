@@ -1,0 +1,179 @@
+do wave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 14:43:45 on Jul 28,2020
+# vlog -reportprogress 300 decode_47.v 
+# -- Compiling module decode_top
+# -- Compiling module seg_sel
+# -- Compiling module decode_47
+# 
+# Top level modules:
+# 	decode_top
+# End time: 14:43:45 on Jul 28,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 14:43:45 on Jul 28,2020
+# vlog -reportprogress 300 decode_47_tb.v 
+# -- Compiling module decode_47_tb
+# ** Error: decode_47_tb.v(7): (vlog-2730) Undefined variable: 'rst_n'.
+# 
+# End time: 14:43:45 on Jul 28,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: D:/STUDY/Modelsim/win64/vlog failed.
+# Error in macro ./wave.do line 2
+# D:/STUDY/Modelsim/win64/vlog failed.
+#     while executing
+# "vlog decode_47_tb.v"
+do wave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 14:44:19 on Jul 28,2020
+# vlog -reportprogress 300 decode_47.v 
+# -- Compiling module decode_top
+# -- Compiling module seg_sel
+# -- Compiling module decode_47
+# 
+# Top level modules:
+# 	decode_top
+# End time: 14:44:19 on Jul 28,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 14:44:19 on Jul 28,2020
+# vlog -reportprogress 300 decode_47_tb.v 
+# -- Compiling module decode_47_tb
+# 
+# Top level modules:
+# 	decode_47_tb
+# End time: 14:44:19 on Jul 28,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -gui D:\STUDY\GitHubWork\Verilog-learning\07_decode_47\decode_47.mpf 
+# Start time: 14:44:19 on Jul 28,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/work.decode_47_tb
+# Loading work.decode_47_tb
+# Refreshing D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/work.decode_top
+# Loading work.decode_top
+# Refreshing D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/work.seg_sel
+# Loading work.seg_sel
+# Refreshing D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/work.decode_47
+# Loading work.decode_47
+# ** Note: $finish    : decode_47_tb.v(17)
+#    Time: 360 ns  Iteration: 0  Instance: /decode_47_tb
+# 1
+# Break in Module decode_47_tb at decode_47_tb.v line 17
+# .main_pane.wave.interior.cs.body.pw.wf
+do wave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 14:45:43 on Jul 28,2020
+# vlog -reportprogress 300 decode_47.v 
+# -- Compiling module decode_top
+# -- Compiling module seg_sel
+# -- Compiling module decode_47
+# 
+# Top level modules:
+# 	decode_top
+# End time: 14:45:43 on Jul 28,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 14:45:43 on Jul 28,2020
+# vlog -reportprogress 300 decode_47_tb.v 
+# -- Compiling module decode_47_tb
+# 
+# Top level modules:
+# 	decode_47_tb
+# End time: 14:45:43 on Jul 28,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 14:45:45 on Jul 28,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/work.decode_47_tb
+# Loading work.decode_47_tb
+# Refreshing D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/work.decode_top
+# Loading work.decode_top
+# Refreshing D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/work.seg_sel
+# Loading work.seg_sel
+# Refreshing D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/work.decode_47
+# Loading work.decode_47
+# ** Note: $finish    : decode_47_tb.v(17)
+#    Time: 360 ns  Iteration: 0  Instance: /decode_47_tb
+# 1
+# Break in Module decode_47_tb at decode_47_tb.v line 17
+# .main_pane.wave.interior.cs.body.pw.wf
+quit -sim
+do wave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 14:47:42 on Jul 28,2020
+# vlog -reportprogress 300 decode_47.v 
+# -- Compiling module decode_top
+# -- Compiling module seg_sel
+# -- Compiling module decode_47
+# 
+# Top level modules:
+# 	decode_top
+# End time: 14:47:43 on Jul 28,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 14:47:43 on Jul 28,2020
+# vlog -reportprogress 300 decode_47_tb.v 
+# -- Compiling module decode_47_tb
+# 
+# Top level modules:
+# 	decode_47_tb
+# End time: 14:47:43 on Jul 28,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 14:47:43 on Jul 28,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/work.decode_47_tb
+# Loading work.decode_47_tb
+# Refreshing D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/work.decode_top
+# Loading work.decode_top
+# Refreshing D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/work.seg_sel
+# Loading work.seg_sel
+# Refreshing D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/work.decode_47
+# Loading work.decode_47
+# ** Note: $finish    : decode_47_tb.v(17)
+#    Time: 360 ns  Iteration: 0  Instance: /decode_47_tb
+# 1
+# Break in Module decode_47_tb at decode_47_tb.v line 17
+# .main_pane.wave.interior.cs.body.pw.wf
+do wave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 14:50:00 on Jul 28,2020
+# vlog -reportprogress 300 decode_47.v 
+# -- Compiling module decode_top
+# -- Compiling module seg_sel
+# -- Compiling module decode_47
+# 
+# Top level modules:
+# 	decode_top
+# End time: 14:50:00 on Jul 28,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 14:50:00 on Jul 28,2020
+# vlog -reportprogress 300 decode_47_tb.v 
+# -- Compiling module decode_47_tb
+# 
+# Top level modules:
+# 	decode_47_tb
+# End time: 14:50:00 on Jul 28,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 14:50:04 on Jul 28,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/work.decode_47_tb
+# Loading work.decode_47_tb
+# Refreshing D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/work.decode_top
+# Loading work.decode_top
+# Refreshing D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/work.seg_sel
+# Loading work.seg_sel
+# Refreshing D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/work.decode_47
+# Loading work.decode_47
+# ** Note: $finish    : decode_47_tb.v(17)
+#    Time: 360 ns  Iteration: 0  Instance: /decode_47_tb
+# 1
+# Break in Module decode_47_tb at decode_47_tb.v line 17
+# .main_pane.wave.interior.cs.body.pw.wf
+quit -sim

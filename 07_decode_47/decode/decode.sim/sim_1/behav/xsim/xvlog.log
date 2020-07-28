@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode_47.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode_top
+INFO: [VRFC 10-311] analyzing module seg_sel
+INFO: [VRFC 10-311] analyzing module decode_47
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode_47_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode_47_tb

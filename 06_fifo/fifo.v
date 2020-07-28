@@ -38,15 +38,15 @@ module fifo (
       wr_addr <= #1 4'b0000;
       rd_addr <= #1 4'b0000;
     end
-    else if ( wr && cnt != `DEPTH ) begin  //写入fifo,且未存满`DEPTH个数据
-      cnt     <= #1 cnt + 5'b0_0001;         //计数器cnt +1
-      wr_addr <= #1 wr_addr + 4'b0001;       //写fifo_addr +1
-      rd_addr <= #1 rd_addr;                 //读fifo_addr 不变
+    else if ( wr && cnt != `DEPTH ) begin   //写入fifo,且未存满`DEPTH个数据
+      cnt     <= #1 cnt + 5'b0_0001;        //计数器cnt +1
+      wr_addr <= #1 wr_addr + 4'b0001;      //写fifo_addr +1
+      rd_addr <= #1 rd_addr;                //读fifo_addr 不变
     end
-    else if ( rd && cnt != 0    ) begin   //读取fifo,且fifo_mem不为空
-      cnt     <= #1 cnt - 5'b0_0001;         //计数器cnt -1
-      wr_addr <= #1 wr_addr;                 //写fifo_addr 不变
-      rd_addr <= #1 rd_addr + 4'b0001;       //读fifo_addr +1
+    else if ( rd && cnt != 0    ) begin     //读取fifo,且fifo_mem不为空
+      cnt     <= #1 cnt - 5'b0_0001;        //计数器cnt -1
+      wr_addr <= #1 wr_addr;                //写fifo_addr 不变
+      rd_addr <= #1 rd_addr + 4'b0001;      //读fifo_addr +1
     end
     else begin
       cnt     <= #1 cnt;

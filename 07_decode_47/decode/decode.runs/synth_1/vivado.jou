@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Jul 28 15:36:44 2020
+# Process ID: 9020
+# Current directory: D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode/decode.runs/synth_1
+# Command line: vivado.exe -log decode_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source decode_top.tcl
+# Log file: D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode/decode.runs/synth_1/decode_top.vds
+# Journal file: D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode/decode.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source decode_top.tcl -notrace
