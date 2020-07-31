@@ -1,0 +1,182 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Jul 30 10:45:04 2020
+# Process ID: 960
+# Current directory: D:/STUDY/GitHubWork/Verilog-learning/08_uart/uart
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2656 D:\STUDY\GitHubWork\Verilog-learning\08_uart\uart\uart.xpr
+# Log file: D:/STUDY/GitHubWork/Verilog-learning/08_uart/uart/vivado.log
+# Journal file: D:/STUDY/GitHubWork/Verilog-learning/08_uart/uart\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/STUDY/GitHubWork/Verilog-learning/08_uart/uart/uart.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/STUDY/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 819.707 ; gain = 158.008
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Jul 30 10:45:35 2020] Launched synth_1...
+Run output will be captured here: D:/STUDY/GitHubWork/Verilog-learning/08_uart/uart/uart.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu Jul 30 10:46:22 2020] Launched impl_1...
+Run output will be captured here: D:/STUDY/GitHubWork/Verilog-learning/08_uart/uart/uart.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/STUDY/GitHubWork/Verilog-learning/08_uart/uart/uart.srcs/constrs_1/new/constrs_1.xdc]
+Finished Parsing XDC File [D:/STUDY/GitHubWork/Verilog-learning/08_uart/uart/uart.srcs/constrs_1/new/constrs_1.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1181.250 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:22 ; elapsed = 00:00:13 . Memory (MB): peak = 1298.898 ; gain = 441.426
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Jul 30 10:53:23 2020] Launched synth_1...
+Run output will be captured here: D:/STUDY/GitHubWork/Verilog-learning/08_uart/uart/uart.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Jul 30 11:03:03 2020] Launched synth_1...
+Run output will be captured here: D:/STUDY/GitHubWork/Verilog-learning/08_uart/uart/uart.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Jul 30 11:04:08 2020] Launched synth_1...
+Run output will be captured here: D:/STUDY/GitHubWork/Verilog-learning/08_uart/uart/uart.runs/synth_1/runme.log
+refresh_design
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/STUDY/GitHubWork/Verilog-learning/08_uart/uart/uart.srcs/constrs_1/new/constrs_1.xdc]
+Finished Parsing XDC File [D:/STUDY/GitHubWork/Verilog-learning/08_uart/uart/uart.srcs/constrs_1/new/constrs_1.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+launch_runs impl_1 -jobs 4
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1877.594 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+[Thu Jul 30 11:06:09 2020] Launched impl_1...
+Run output will be captured here: D:/STUDY/GitHubWork/Verilog-learning/08_uart/uart/uart.runs/impl_1/runme.log
+set_property is_loc_fixed true [get_ports [list  {rx_data_o[7]} {rx_data_o[6]} {rx_data_o[5]} {rx_data_o[4]} {rx_data_o[3]} {rx_data_o[2]} {rx_data_o[1]} {rx_data_o[0]}]]
+set_property is_loc_fixed true [get_ports [list  {rx_data_o[7]} {rx_data_o[6]} {rx_data_o[5]} {rx_data_o[4]} {rx_data_o[3]} {rx_data_o[2]} {rx_data_o[1]} {rx_data_o[0]}]]
+set_property is_loc_fixed true [get_ports [list  {rx_data_o[7]} {rx_data_o[6]} {rx_data_o[5]} {rx_data_o[4]} {rx_data_o[3]} {rx_data_o[2]} {rx_data_o[1]} {rx_data_o[0]}]]
+set_property is_loc_fixed true [get_ports [list  {rx_data_o[7]} {rx_data_o[6]} {rx_data_o[5]} {rx_data_o[4]} {rx_data_o[3]} {rx_data_o[2]} {rx_data_o[1]} {rx_data_o[0]}]]
+set_property is_loc_fixed true [get_ports [list  {rx_data_o[7]} {rx_data_o[6]} {rx_data_o[5]} {rx_data_o[4]} {rx_data_o[3]} {rx_data_o[2]} {rx_data_o[1]} {rx_data_o[0]}]]
+set_property is_loc_fixed true [get_ports [list  {tx_data_i[7]} {tx_data_i[6]} {tx_data_i[5]} {tx_data_i[4]} {tx_data_i[3]} {tx_data_i[2]} {tx_data_i[1]} {tx_data_i[0]}]]
+set_property is_loc_fixed true [get_ports [list  {tx_data_i[7]} {tx_data_i[6]} {tx_data_i[5]} {tx_data_i[4]} {tx_data_i[3]} {tx_data_i[2]} {tx_data_i[1]} {tx_data_i[0]}]]
+set_property is_loc_fixed true [get_ports [list  {tx_data_i[7]} {tx_data_i[6]} {tx_data_i[5]} {tx_data_i[4]} {tx_data_i[3]} {tx_data_i[2]} {tx_data_i[1]} {tx_data_i[0]}]]
+set_property is_loc_fixed true [get_ports [list  {rx_data_o[7]} {rx_data_o[6]} {rx_data_o[5]} {rx_data_o[4]} {rx_data_o[3]} {rx_data_o[2]} {rx_data_o[1]} {rx_data_o[0]}]]
+set_property is_loc_fixed true [get_ports [list  {rx_data_o[7]} {rx_data_o[6]} {rx_data_o[5]} {rx_data_o[4]} {rx_data_o[3]} {rx_data_o[2]} {rx_data_o[1]} {rx_data_o[0]}]]
+set_property is_loc_fixed true [get_ports [list  {rx_data_o[7]} {rx_data_o[6]} {rx_data_o[5]} {rx_data_o[4]} {rx_data_o[3]} {rx_data_o[2]} {rx_data_o[1]} {rx_data_o[0]}]]
+set_property is_loc_fixed true [get_ports [list  {rx_data_o[7]} {rx_data_o[6]} {rx_data_o[5]} {rx_data_o[4]} {rx_data_o[3]} {rx_data_o[2]} {rx_data_o[1]} {rx_data_o[0]}]]
+set_property package_pin "" [get_ports [list  {rx_data_o[7]}]]
+set_property package_pin "" [get_ports [list  {tx_data_i[7]}]]
+place_ports {tx_data_i[0]} U9
+place_ports {tx_data_i[1]} U8
+place_ports {tx_data_i[2]} R7
+place_ports {tx_data_i[3]} R6
+place_ports {tx_data_i[4]} V7
+place_ports {tx_data_i[5]} V6
+place_ports {tx_data_i[6]} V5
+place_ports {tx_data_i[4]} R5
+place_ports {tx_data_i[5]} V7
+place_ports {tx_data_i[6]} V6
+place_ports {tx_data_i[7]} V5
+place_ports {rx_data_o[7]} U6
+set_property package_pin "" [get_ports [list  {rx_data_o[5]}]]
+place_ports {rx_data_o[6]} U7
+place_ports {rx_data_o[5]} T4
+place_ports {rx_data_o[4]} T5
+place_ports {rx_data_o[3]} T6
+place_ports {rx_data_o[2]} R8
+place_ports {rx_data_o[1]} V9
+place_ports {rx_data_o[0]} T8
+place_ports tx_ok H6
+set_property package_pin "" [get_ports [list  sys_clk]]
+place_ports rx_ok F13
+place_ports rst_n P4
+place_ports tx_start P3
+set_property package_pin "" [get_ports [list  rxd]]
+place_ports txd D4
+place_ports rxd C4
+place_ports sys_clk E3
+set_property IOSTANDARD LVCMOS33 [get_ports [list {rx_data_o[7]} {rx_data_o[6]} {rx_data_o[5]} {rx_data_o[4]} {rx_data_o[3]} {rx_data_o[2]} {rx_data_o[1]} {rx_data_o[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {tx_data_i[7]} {tx_data_i[6]} {tx_data_i[5]} {tx_data_i[4]} {tx_data_i[3]} {tx_data_i[2]} {tx_data_i[1]} {tx_data_i[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rst_n]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rx_ok]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rxd]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list sys_clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list tx_ok]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list tx_start]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list txd]]
+set_property target_constrs_file D:/STUDY/GitHubWork/Verilog-learning/08_uart/uart/uart.srcs/constrs_1/new/constrs_1.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Jul 30 11:20:31 2020] Launched synth_1...
+Run output will be captured here: D:/STUDY/GitHubWork/Verilog-learning/08_uart/uart/uart.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Jul 30 11:21:21 2020] Launched impl_1...
+Run output will be captured here: D:/STUDY/GitHubWork/Verilog-learning/08_uart/uart/uart.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jul 30 11:23:36 2020] Launched impl_1...
+Run output will be captured here: D:/STUDY/GitHubWork/Verilog-learning/08_uart/uart/uart.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2026.555 ; gain = 1.836
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274532902A
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210274532902A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/STUDY/GitHubWork/Verilog-learning/08_uart/uart/uart.runs/impl_1/uart_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210274532902A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274532902A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Jul 30 11:28:47 2020] Launched synth_1...
+Run output will be captured here: D:/STUDY/GitHubWork/Verilog-learning/08_uart/uart/uart.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Jul 30 11:29:45 2020] Launched synth_1...
+Run output will be captured here: D:/STUDY/GitHubWork/Verilog-learning/08_uart/uart/uart.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Jul 30 11:30:33 2020] Launched impl_1...
+Run output will be captured here: D:/STUDY/GitHubWork/Verilog-learning/08_uart/uart/uart.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jul 30 11:31:58 2020] Launched impl_1...
+Run output will be captured here: D:/STUDY/GitHubWork/Verilog-learning/08_uart/uart/uart.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/STUDY/GitHubWork/Verilog-learning/08_uart/uart/uart.runs/impl_1/uart_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 30 11:42:15 2020...

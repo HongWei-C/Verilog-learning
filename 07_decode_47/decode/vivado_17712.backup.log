@@ -1,0 +1,149 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Jul 28 21:33:28 2020
+# Process ID: 17712
+# Current directory: D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24160 D:\STUDY\GitHubWork\Verilog-learning\07_decode_47\decode\decode.xpr
+# Log file: D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode/vivado.log
+# Journal file: D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode/decode.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/STUDY/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 811.484 ; gain = 173.973
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode/decode.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'decode_47_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode/decode.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj decode_47_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode_47.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode_top
+INFO: [VRFC 10-311] analyzing module seg_sel
+INFO: [VRFC 10-311] analyzing module decode_47
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode_47_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode_47_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode/decode.sim/sim_1/behav/xsim'
+"xelab -wto e883089646654dd8a900f4f380f1ba52 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot decode_47_tb_behav xil_defaultlib.decode_47_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/STUDY/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e883089646654dd8a900f4f380f1ba52 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot decode_47_tb_behav xil_defaultlib.decode_47_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode_47.v" Line 1. Module decode_top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode_47.v" Line 28. Module seg_sel doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode_47.v" Line 62. Module decode_47 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.seg_sel
+Compiling module xil_defaultlib.decode_47
+Compiling module xil_defaultlib.decode_top
+Compiling module xil_defaultlib.decode_47_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot decode_47_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode/decode.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "decode_47_tb_behav -key {Behavioral:sim_1:Functional:decode_47_tb} -tclbatch {decode_47_tb.tcl} -view {D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode/decode_47_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode/decode_47_tb_behav.wcfg
+source decode_47_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 360 ns : File "D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode_47_tb.v" Line 17
+xsim: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 842.180 ; gain = 14.574
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'decode_47_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 842.180 ; gain = 14.574
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode/decode.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'decode_47_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode/decode.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj decode_47_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode_47.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode_top
+INFO: [VRFC 10-311] analyzing module seg_sel
+INFO: [VRFC 10-311] analyzing module decode_47
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode_47_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode_47_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode/decode.sim/sim_1/behav/xsim'
+"xelab -wto e883089646654dd8a900f4f380f1ba52 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot decode_47_tb_behav xil_defaultlib.decode_47_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/STUDY/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e883089646654dd8a900f4f380f1ba52 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot decode_47_tb_behav xil_defaultlib.decode_47_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode_47.v" Line 1. Module decode_top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode_47.v" Line 28. Module seg_sel doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode_47.v" Line 59. Module decode_47 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.seg_sel
+Compiling module xil_defaultlib.decode_47
+Compiling module xil_defaultlib.decode_top
+Compiling module xil_defaultlib.decode_47_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot decode_47_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode/decode.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "decode_47_tb_behav -key {Behavioral:sim_1:Functional:decode_47_tb} -tclbatch {decode_47_tb.tcl} -view {D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode/decode_47_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode/decode_47_tb_behav.wcfg
+source decode_47_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 360 ns : File "D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode_47_tb.v" Line 17
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'decode_47_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 898.418 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 28 21:37:20 2020...

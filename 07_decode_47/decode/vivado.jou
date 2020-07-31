@@ -2,109 +2,14 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Tue Jul 28 14:52:23 2020
-# Process ID: 7108
+# Start of session at: Wed Jul 29 08:45:00 2020
+# Process ID: 23416
 # Current directory: D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9564 D:\STUDY\GitHubWork\Verilog-learning\07_decode_47\decode\decode.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23696 D:\STUDY\GitHubWork\Verilog-learning\07_decode_47\decode\decode.xpr
 # Log file: D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode/vivado.log
 # Journal file: D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode/decode.xpr
 update_compile_order -fileset sources_1
-launch_simulation
-open_wave_config D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode/decode_47_tb_behav.wcfg
-source decode_47_tb.tcl
-relaunch_sim
-save_wave_config {D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode/decode_47_tb_behav.wcfg}
-close_sim
-launch_simulation
-open_wave_config D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode/decode_47_tb_behav.wcfg
-source decode_47_tb.tcl
-synth_design -rtl -name rtl_1
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-launch_runs impl_1 -jobs 4
-wait_on_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-set_property package_pin "" [get_ports [list  rst_n]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list rst_n]]
-place_ports rst_n R6
-save_constraints
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-launch_runs impl_1 -jobs 4
-wait_on_run impl_1
-close_sim
-launch_simulation
-open_wave_config D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode/decode_47_tb_behav.wcfg
-source decode_47_tb.tcl
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-reset_run synth_1
-close_sim
-launch_simulation
-open_wave_config D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode/decode_47_tb_behav.wcfg
-source decode_47_tb.tcl
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-close_sim
-launch_simulation
-open_wave_config D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode/decode_47_tb_behav.wcfg
-source decode_47_tb.tcl
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-launch_runs impl_1 -jobs 4
-wait_on_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-open_hw
-connect_hw_server
-disconnect_hw_server localhost:3121
-connect_hw_server
-open_hw_target
-set_property PROGRAM.FILE {D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode/decode.runs/impl_1/decode_top.bit} [get_hw_devices xc7a100t_0]
-current_hw_device [get_hw_devices xc7a100t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode/decode.runs/impl_1/decode_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-close_sim
-launch_simulation
-open_wave_config D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode/decode_47_tb_behav.wcfg
-source decode_47_tb.tcl
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-launch_runs impl_1 -jobs 4
-wait_on_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode/decode.runs/impl_1/decode_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-launch_runs synth_1 -jobs 4
-reset_runs synth_1 -jobs 4
-reset_runs synth_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-launch_runs impl_1 -jobs 4
-wait_on_run impl_1
-open_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {D:/STUDY/GitHubWork/Verilog-learning/07_decode_47/decode/decode.runs/impl_1/decode_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-close_sim
+config_webtalk -user off

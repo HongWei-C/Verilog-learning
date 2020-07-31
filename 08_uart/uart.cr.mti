@@ -1,0 +1,15 @@
+D:/STUDY/GitHubWork/Verilog-learning/08_uart/uart_baud_tb.v {1 {vlog -work work -vopt -stats=none D:/STUDY/GitHubWork/Verilog-learning/08_uart/uart_baud_tb.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module uart_baud_tb
+
+Top level modules:
+	uart_baud_tb
+
+} {} {}} D:/STUDY/GitHubWork/Verilog-learning/08_uart/uart_baud.v {1 {vlog -work work -vopt -stats=none D:/STUDY/GitHubWork/Verilog-learning/08_uart/uart_baud.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module uart_baud
+
+Top level modules:
+	uart_baud
+
+} {} {}}

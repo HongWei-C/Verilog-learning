@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1595921801">
   <File Type="PA-TCL" Name="decode_top.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="decode_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="decode_top_reports.tcl"/>
   <File Type="RDS-RDS" Name="decode_top.vds"/>
   <File Type="RDS-UTIL" Name="decode_top_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="decode_top_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="decode_top.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="decode_top_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="decode_top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../decode_47.v">

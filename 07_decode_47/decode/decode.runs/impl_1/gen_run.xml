@@ -1,69 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1595921843">
-  <File Type="BITSTR-BMM" Name="decode_top_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="decode_top_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="decode_top_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR" Name="decode_top_power_routed.rpt"/>
   <File Type="PA-TCL" Name="decode_top.tcl"/>
-  <File Type="OPT-TIMING" Name="decode_top_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="decode_top_opt.dcp"/>
+  <File Type="BITSTR-BMM" Name="decode_top_bd.bmm"/>
   <File Type="ROUTE-PWR-SUM" Name="decode_top_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="decode_top_reports.tcl"/>
+  <File Type="OPT-DCP" Name="decode_top_opt.dcp"/>
   <File Type="OPT-DRC" Name="decode_top_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="decode_top.hwdef"/>
   <File Type="PWROPT-DCP" Name="decode_top_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="decode_top_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="decode_top_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="decode_top_placed.dcp"/>
   <File Type="PLACE-IO" Name="decode_top_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="decode_top_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="decode_top_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="decode_top_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="decode_top_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="decode_top_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="decode_top_incremental_reuse_pre_placed.rpt"/>
   <File Type="BG-BGN" Name="decode_top.bgn"/>
-  <File Type="PLACE-TIMING" Name="decode_top_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="decode_top_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="decode_top.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="decode_top_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="decode_top_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="decode_top_drc_physopted.rpt"/>
   <File Type="BITSTR-MSK" Name="decode_top.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="decode_top_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="decode_top_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="decode_top_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="decode_top_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="decode_top_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="decode_top_drc_routed.pb"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="decode_top.ltx"/>
   <File Type="ROUTE-DRC-RPX" Name="decode_top_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="decode_top.mmi"/>
+  <File Type="BITSTR-LTX" Name="decode_top.ltx"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="decode_top_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="decode_top.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="decode_top_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="decode_top.sysdef"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="decode_top_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="decode_top.sysdef"/>
   <File Type="ROUTE-PWR-RPX" Name="decode_top_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="decode_top_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="decode_top_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="decode_top_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="decode_top_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="decode_top_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="decode_top_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="decode_top_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="decode_top_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="decode_top_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="decode_top_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="decode_top_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="decode_top_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="decode_top_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="decode_top_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="decode_top_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="decode_top_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="decode_top_bus_skew_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="decode_top.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="decode_top_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="decode_top.rbt"/>
   <File Type="BITSTR-NKY" Name="decode_top.nky"/>
   <File Type="BG-DRC" Name="decode_top.drc"/>
