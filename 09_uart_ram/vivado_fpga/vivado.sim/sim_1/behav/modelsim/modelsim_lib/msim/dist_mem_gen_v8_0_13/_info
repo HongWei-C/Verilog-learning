@@ -1,0 +1,31 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/67551/Desktop/uart_ram/vivado_fpga/vivado.sim/sim_1/behav/modelsim
+vdist_mem_gen_v8_0_13
+!s10a 1596377507
+!s110 1596378840
+!i10b 1
+!s100 R<1R?m:RY^H;FWU@n][C12
+IDW;<@Vo^:^XbYNRH]HKBc1
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1596377507
+8../../../../vivado.ip_user_files/ipstatic/simulation/dist_mem_gen_v8_0.v
+F../../../../vivado.ip_user_files/ipstatic/simulation/dist_mem_gen_v8_0.v
+L0 78
+OL;L;10.4;61
+r1
+!s85 0
+31
+!s108 1596378840.099000
+!s107 ../../../../vivado.ip_user_files/ipstatic/simulation/dist_mem_gen_v8_0.v|
+!s90 -64|-incr|-work|dist_mem_gen_v8_0_13|../../../../vivado.ip_user_files/ipstatic/simulation/dist_mem_gen_v8_0.v|
+!i113 0
+o-work dist_mem_gen_v8_0_13 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact

@@ -1,0 +1,36 @@
+# //  ModelSim SE-64 10.4 Dec  3 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# do {uart_ram_tb_simulate.do}
+# vsim -do "do {uart_ram_tb_simulate.do}" -l simulate.log 
+# Start time: 08:38:18 on Aug 03,2020
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# 
+# Loading work.uart_ram_tb(fast)
+# Loading work.uart_ram(fast)
+# Loading work.uart_top(fast)
+# Loading work.uart_baud(fast)
+# Loading work.uart_rx(fast)
+# Loading work.uart_tx(fast)
+# Loading work.dmg_ram(fast)
+# Loading dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(fast)
+# Loading work.glbl(fast)
+# 1
+# 1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# End time: 08:44:59 on Aug 03,2020, Elapsed time: 0:06:41
+# Errors: 0, Warnings: 0

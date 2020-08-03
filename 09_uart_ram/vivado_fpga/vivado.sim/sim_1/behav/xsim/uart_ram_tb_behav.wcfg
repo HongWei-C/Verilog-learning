@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="uart_ram_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="uart_ram_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="6000000000fs"></ZoomStartTime>
+      <ZoomEndTime time="12150000001fs"></ZoomEndTime>
+      <Cursor1Time time="5975000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="192"></NameColumnWidth>
+      <ValueColumnWidth column_width="106"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/uart_ram_tb/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_ram_tb/sys_clk" type="logic">
+      <obj_property name="ElementShortName">sys_clk</obj_property>
+      <obj_property name="ObjectShortName">sys_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_ram_tb/ram_1/bps_clk_up" type="logic">
+      <obj_property name="ElementShortName">bps_clk_up</obj_property>
+      <obj_property name="ObjectShortName">bps_clk_up</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_ram_tb/ram_1/top_to_ram/top_rx/state" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state[3:0]</obj_property>
+      <obj_property name="label">rx_state[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_ram_tb/rxd" type="logic">
+      <obj_property name="ElementShortName">rxd</obj_property>
+      <obj_property name="ObjectShortName">rxd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_ram_tb/ram_1/rx_bits_ok" type="logic">
+      <obj_property name="ElementShortName">rx_bits_ok</obj_property>
+      <obj_property name="ObjectShortName">rx_bits_ok</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_ram_tb/ram_1/state" type="array">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_ram_tb/ram_1/rx_data_o" type="array">
+      <obj_property name="ElementShortName">rx_data_o[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_data_o[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_ram_tb/ram_1/ram_command" type="array">
+      <obj_property name="ElementShortName">ram_command[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_command[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_ram_tb/ram_1/ram_addr" type="array">
+      <obj_property name="ElementShortName">ram_addr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_addr[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_ram_tb/ram_1/ram_datain" type="array">
+      <obj_property name="ElementShortName">ram_datain[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_datain[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_ram_tb/ram_1/top_to_ram/top_tx/state" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state[3:0]</obj_property>
+      <obj_property name="label">tx_state[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_ram_tb/ram_1/ram_write" type="logic">
+      <obj_property name="ElementShortName">ram_write</obj_property>
+      <obj_property name="ObjectShortName">ram_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_ram_tb/txd" type="logic">
+      <obj_property name="ElementShortName">txd</obj_property>
+      <obj_property name="ObjectShortName">txd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_ram_tb/ram_1/tx_ready" type="logic">
+      <obj_property name="ElementShortName">tx_ready</obj_property>
+      <obj_property name="ObjectShortName">tx_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_ram_tb/ram_1/ram_dataout" type="array">
+      <obj_property name="ElementShortName">ram_dataout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_dataout[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+</wave_config>

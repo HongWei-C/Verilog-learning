@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../vivado.srcs/sources_1/ip/dmg_ram/sim/dmg_ram.v" \
+"../../../../../verilog/uart_baud.v" \
+"../../../../../verilog/uart_ram.v" \
+"../../../../../verilog/uart_rx.v" \
+"../../../../../verilog/uart_top.v" \
+"../../../../../verilog/uart_tx.v" \
+"../../../../../verilog/uart_ram_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,13 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/67551/Desktop/uart_ram/verilog/uart_baud.v,1596354946,verilog,,C:/Users/67551/Desktop/uart_ram/verilog/uart_ram.v,C:/Users/67551/Desktop/uart_ram/verilog/uart_defines.v,uart_baud,,,,,,,,
+C:/Users/67551/Desktop/uart_ram/verilog/uart_defines.v,1596355054,verilog,,,,,,,,,,,,
+C:/Users/67551/Desktop/uart_ram/verilog/uart_ram.v,1596377739,verilog,,C:/Users/67551/Desktop/uart_ram/verilog/uart_rx.v,C:/Users/67551/Desktop/uart_ram/verilog/uart_defines.v,uart_ram,,,,,,,,
+C:/Users/67551/Desktop/uart_ram/verilog/uart_ram_tb.v,1596376324,verilog,,,C:/Users/67551/Desktop/uart_ram/verilog/uart_defines.v,uart_ram_tb,,,,,,,,
+C:/Users/67551/Desktop/uart_ram/verilog/uart_rx.v,1596356699,verilog,,C:/Users/67551/Desktop/uart_ram/verilog/uart_top.v,C:/Users/67551/Desktop/uart_ram/verilog/uart_defines.v,uart_rx,,,,,,,,
+C:/Users/67551/Desktop/uart_ram/verilog/uart_top.v,1596369337,verilog,,C:/Users/67551/Desktop/uart_ram/verilog/uart_tx.v,C:/Users/67551/Desktop/uart_ram/verilog/uart_defines.v,uart_top,,,,,,,,
+C:/Users/67551/Desktop/uart_ram/verilog/uart_tx.v,1596367900,verilog,,C:/Users/67551/Desktop/uart_ram/verilog/uart_ram_tb.v,C:/Users/67551/Desktop/uart_ram/verilog/uart_defines.v,uart_tx,,,,,,,,
+C:/Users/67551/Desktop/uart_ram/vivado_fpga/vivado.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/67551/Desktop/uart_ram/vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/sim/dmg_ram.v,1596377503,verilog,,C:/Users/67551/Desktop/uart_ram/verilog/uart_baud.v,,dmg_ram,,,,,,,,

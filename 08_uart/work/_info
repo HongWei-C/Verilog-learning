@@ -9,20 +9,21 @@ z2
 cModel Technology
 dD:/STUDY/GitHubWork/Verilog-learning/07_decode_47
 vuart_baud
-Z0 VDg1SIo80bB@j0V0VzS_@n1
-r1
-!s85 0
-31
+!s110 1596276453
 !i10b 1
-!s100 L<QKidzbBEJo^Umo`_ilf3
-IYIX64_HMUXOR8DCiU3EVI3
+!s100 J7QHZRBR]>AW35LbRACV;3
+IQJCO9N]6U>LJ;P=gNcHB;1
+Z0 VDg1SIo80bB@j0V0VzS_@n1
 Z1 dD:/STUDY/GitHubWork/Verilog-learning/08_uart
 w1596078237
 8uart_baud.v
 Fuart_baud.v
 L0 3
 Z2 OL;L;10.4;61
-!s108 1596164202.552000
+r1
+!s85 0
+31
+!s108 1596276453.455000
 !s107 uart_defines.v|uart_baud.v|
 !s90 -reportprogress|300|uart_baud.v|
 !i113 0
@@ -61,7 +62,7 @@ w1596162004
 Fuart_rx.v
 L0 3
 R2
-!s108 1596164202.705000
+!s108 1596276453.535000
 !s107 uart_defines.v|uart_rx.v|
 !s90 -reportprogress|300|uart_rx.v|
 !i113 0
@@ -80,7 +81,7 @@ w1596159799
 Fuart_rx_tb.v
 L0 3
 R2
-!s108 1596162123.640000
+!s108 1596276453.612000
 !s107 uart_defines.v|uart_rx_tb.v|
 !s90 -reportprogress|300|uart_rx_tb.v|
 !i113 0
