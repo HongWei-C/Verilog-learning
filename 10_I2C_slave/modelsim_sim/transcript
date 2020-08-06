@@ -1,0 +1,1761 @@
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:06:04 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 17:06:04 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:06:04 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 17:06:04 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:06:04 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 17:06:04 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:06:04 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# 
+# Top level modules:
+# 	i2c_slave_tb
+# End time: 17:06:04 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -gui C:\Users\67551\Desktop\I2C_slave\modelsim_sim\i2c.mpf 
+# Start time: 17:06:04 on Aug 06,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave_tb
+# Loading work.i2c_slave_tb
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave
+# Loading work.i2c_slave
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_div_clk
+# Loading work.i2c_div_clk
+# ** Warning: (vsim-3015) ../verilog/i2c_slave_tb.v(103): [PCDPC] - Port size (8) does not match connection size (1) for port 'sda_data_out'. The port definition is at: ../verilog/i2c_slave.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /i2c_slave_tb/slave_duf File: ../verilog/i2c_slave.v
+# ** Note: $finish    : ../verilog/i2c_slave_tb.v(99)
+#    Time: 1833 ns  Iteration: 0  Instance: /i2c_slave_tb
+# 1
+# Break in Module i2c_slave_tb at ../verilog/i2c_slave_tb.v line 99
+# .main_pane.wave.interior.cs.body.pw.wf
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:09:38 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 17:09:38 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:09:38 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 17:09:38 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:09:38 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 17:09:38 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:09:38 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# ** Error: ../verilog/i2c_slave_tb.v(99): (vlog-2110) Illegal reference to net "sda_en".
+# 
+# ** Error: ../verilog/i2c_slave_tb.v(106): (vlog-2110) Illegal reference to net "sda_en".
+# 
+# End time: 17:09:38 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: D:/STUDY/Modelsim/win64/vlog failed.
+# Error in macro ./i2c_slave.do line 4
+# D:/STUDY/Modelsim/win64/vlog failed.
+#     while executing
+# "vlog ../verilog/i2c_slave_tb.v"
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:10:26 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 17:10:26 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:10:26 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 17:10:27 on Aug 06,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:10:27 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 17:10:27 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:10:27 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# 
+# Top level modules:
+# 	i2c_slave_tb
+# End time: 17:10:27 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 17:10:28 on Aug 06,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave_tb
+# Loading work.i2c_slave_tb
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave
+# Loading work.i2c_slave
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_div_clk
+# Loading work.i2c_div_clk
+# ** Warning: (vsim-3015) ../verilog/i2c_slave_tb.v(113): [PCDPC] - Port size (8) does not match connection size (1) for port 'sda_data_out'. The port definition is at: ../verilog/i2c_slave.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /i2c_slave_tb/slave_duf File: ../verilog/i2c_slave.v
+# ** Note: $finish    : ../verilog/i2c_slave_tb.v(109)
+#    Time: 2313 ns  Iteration: 0  Instance: /i2c_slave_tb
+# 1
+# Break in Module i2c_slave_tb at ../verilog/i2c_slave_tb.v line 109
+# .main_pane.wave.interior.cs.body.pw.wf
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:14:22 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 17:14:22 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:14:23 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 17:14:23 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:14:23 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 17:14:23 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:14:23 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# 
+# Top level modules:
+# 	i2c_slave_tb
+# End time: 17:14:23 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 17:14:24 on Aug 06,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave_tb
+# Loading work.i2c_slave_tb
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave
+# Loading work.i2c_slave
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_div_clk
+# Loading work.i2c_div_clk
+# ** Warning: (vsim-3015) ../verilog/i2c_slave_tb.v(112): [PCDPC] - Port size (8) does not match connection size (1) for port 'sda_data_out'. The port definition is at: ../verilog/i2c_slave.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /i2c_slave_tb/slave_duf File: ../verilog/i2c_slave.v
+# ** Note: $finish    : ../verilog/i2c_slave_tb.v(108)
+#    Time: 2313 ns  Iteration: 0  Instance: /i2c_slave_tb
+# 1
+# Break in Module i2c_slave_tb at ../verilog/i2c_slave_tb.v line 108
+# .main_pane.wave.interior.cs.body.pw.wf
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:17:42 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 17:17:42 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:17:42 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 17:17:42 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:17:42 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# ** Error: (vlog-13069) ../verilog/i2c_slave.v(199): near "else": syntax error, unexpected else.
+# 
+# End time: 17:17:42 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: D:/STUDY/Modelsim/win64/vlog failed.
+# Error in macro ./i2c_slave.do line 3
+# D:/STUDY/Modelsim/win64/vlog failed.
+#     while executing
+# "vlog ../verilog/i2c_slave.v"
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:18:27 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 17:18:27 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:18:27 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 17:18:27 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:18:27 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 17:18:27 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:18:27 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# 
+# Top level modules:
+# 	i2c_slave_tb
+# End time: 17:18:27 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 17:18:28 on Aug 06,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave_tb
+# Loading work.i2c_slave_tb
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave
+# Loading work.i2c_slave
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_div_clk
+# Loading work.i2c_div_clk
+# ** Warning: (vsim-3015) ../verilog/i2c_slave_tb.v(112): [PCDPC] - Port size (8) does not match connection size (1) for port 'sda_data_out'. The port definition is at: ../verilog/i2c_slave.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /i2c_slave_tb/slave_duf File: ../verilog/i2c_slave.v
+# ** Note: $finish    : ../verilog/i2c_slave_tb.v(108)
+#    Time: 2313 ns  Iteration: 0  Instance: /i2c_slave_tb
+# 1
+# Break in Module i2c_slave_tb at ../verilog/i2c_slave_tb.v line 108
+# .main_pane.wave.interior.cs.body.pw.wf
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:19:31 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 17:19:31 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:19:32 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 17:19:32 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:19:32 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 17:19:32 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:19:32 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# 
+# Top level modules:
+# 	i2c_slave_tb
+# End time: 17:19:32 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 17:19:36 on Aug 06,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave_tb
+# Loading work.i2c_slave_tb
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave
+# Loading work.i2c_slave
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_div_clk
+# Loading work.i2c_div_clk
+# ** Warning: (vsim-3015) ../verilog/i2c_slave_tb.v(113): [PCDPC] - Port size (8) does not match connection size (1) for port 'sda_data_out'. The port definition is at: ../verilog/i2c_slave.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /i2c_slave_tb/slave_duf File: ../verilog/i2c_slave.v
+# ** Note: $finish    : ../verilog/i2c_slave_tb.v(109)
+#    Time: 2313 ns  Iteration: 0  Instance: /i2c_slave_tb
+# 1
+# Break in Module i2c_slave_tb at ../verilog/i2c_slave_tb.v line 109
+# .main_pane.wave.interior.cs.body.pw.wf
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:23:45 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 17:23:45 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:23:45 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 17:23:45 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:23:45 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 17:23:45 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:23:45 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# 
+# Top level modules:
+# 	i2c_slave_tb
+# End time: 17:23:45 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 17:23:46 on Aug 06,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave_tb
+# Loading work.i2c_slave_tb
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave
+# Loading work.i2c_slave
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_div_clk
+# Loading work.i2c_div_clk
+# ** Warning: (vsim-3015) ../verilog/i2c_slave_tb.v(113): [PCDPC] - Port size (8) does not match connection size (1) for port 'sda_data_out'. The port definition is at: ../verilog/i2c_slave.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /i2c_slave_tb/slave_duf File: ../verilog/i2c_slave.v
+# ** Note: $finish    : ../verilog/i2c_slave_tb.v(109)
+#    Time: 2333 ns  Iteration: 0  Instance: /i2c_slave_tb
+# 1
+# Break in Module i2c_slave_tb at ../verilog/i2c_slave_tb.v line 109
+# .main_pane.wave.interior.cs.body.pw.wf
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:25:29 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 17:25:29 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:25:29 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 17:25:29 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:25:29 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 17:25:29 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:25:29 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# 
+# Top level modules:
+# 	i2c_slave_tb
+# End time: 17:25:29 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 17:25:33 on Aug 06,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave_tb
+# Loading work.i2c_slave_tb
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave
+# Loading work.i2c_slave
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_div_clk
+# Loading work.i2c_div_clk
+# ** Warning: (vsim-3015) ../verilog/i2c_slave_tb.v(113): [PCDPC] - Port size (8) does not match connection size (1) for port 'sda_data_out'. The port definition is at: ../verilog/i2c_slave.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /i2c_slave_tb/slave_duf File: ../verilog/i2c_slave.v
+# ** Note: $finish    : ../verilog/i2c_slave_tb.v(109)
+#    Time: 2333 ns  Iteration: 0  Instance: /i2c_slave_tb
+# 1
+# Break in Module i2c_slave_tb at ../verilog/i2c_slave_tb.v line 109
+# .main_pane.wave.interior.cs.body.pw.wf
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:27:30 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 17:27:31 on Aug 06,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:27:31 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 17:27:31 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:27:31 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 17:27:31 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:27:31 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# 
+# Top level modules:
+# 	i2c_slave_tb
+# End time: 17:27:31 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 17:27:32 on Aug 06,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave_tb
+# Loading work.i2c_slave_tb
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave
+# Loading work.i2c_slave
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_div_clk
+# Loading work.i2c_div_clk
+# ** Warning: (vsim-3015) ../verilog/i2c_slave_tb.v(181): [PCDPC] - Port size (8) does not match connection size (1) for port 'sda_data_out'. The port definition is at: ../verilog/i2c_slave.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /i2c_slave_tb/slave_duf File: ../verilog/i2c_slave.v
+# ** Note: $finish    : ../verilog/i2c_slave_tb.v(177)
+#    Time: 4093 ns  Iteration: 0  Instance: /i2c_slave_tb
+# 1
+# Break in Module i2c_slave_tb at ../verilog/i2c_slave_tb.v line 177
+# .main_pane.wave.interior.cs.body.pw.wf
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:29:14 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 17:29:14 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:29:14 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 17:29:14 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:29:14 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 17:29:14 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:29:14 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# 
+# Top level modules:
+# 	i2c_slave_tb
+# End time: 17:29:14 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 17:29:15 on Aug 06,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave_tb
+# Loading work.i2c_slave_tb
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave
+# Loading work.i2c_slave
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_div_clk
+# Loading work.i2c_div_clk
+# ** Warning: (vsim-3015) ../verilog/i2c_slave_tb.v(181): [PCDPC] - Port size (8) does not match connection size (1) for port 'sda_data_out'. The port definition is at: ../verilog/i2c_slave.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /i2c_slave_tb/slave_duf File: ../verilog/i2c_slave.v
+# ** Note: $finish    : ../verilog/i2c_slave_tb.v(177)
+#    Time: 4093 ns  Iteration: 0  Instance: /i2c_slave_tb
+# 1
+# Break in Module i2c_slave_tb at ../verilog/i2c_slave_tb.v line 177
+# .main_pane.wave.interior.cs.body.pw.wf
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:32:42 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 17:32:42 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:32:42 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 17:32:42 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:32:42 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 17:32:42 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:32:42 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# 
+# Top level modules:
+# 	i2c_slave_tb
+# End time: 17:32:42 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 17:32:43 on Aug 06,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave_tb
+# Loading work.i2c_slave_tb
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave
+# Loading work.i2c_slave
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_div_clk
+# Loading work.i2c_div_clk
+# ** Warning: (vsim-3015) ../verilog/i2c_slave_tb.v(181): [PCDPC] - Port size (8) does not match connection size (1) for port 'sda_data_out'. The port definition is at: ../verilog/i2c_slave.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /i2c_slave_tb/slave_duf File: ../verilog/i2c_slave.v
+# ** Note: $finish    : ../verilog/i2c_slave_tb.v(177)
+#    Time: 4093 ns  Iteration: 0  Instance: /i2c_slave_tb
+# 1
+# Break in Module i2c_slave_tb at ../verilog/i2c_slave_tb.v line 177
+# .main_pane.wave.interior.cs.body.pw.wf
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:34:12 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 17:34:12 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:34:12 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 17:34:13 on Aug 06,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:34:13 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 17:34:13 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:34:13 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# 
+# Top level modules:
+# 	i2c_slave_tb
+# End time: 17:34:13 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 17:34:15 on Aug 06,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave_tb
+# Loading work.i2c_slave_tb
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave
+# Loading work.i2c_slave
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_div_clk
+# Loading work.i2c_div_clk
+# ** Warning: (vsim-3015) ../verilog/i2c_slave_tb.v(181): [PCDPC] - Port size (8) does not match connection size (1) for port 'sda_data_out'. The port definition is at: ../verilog/i2c_slave.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /i2c_slave_tb/slave_duf File: ../verilog/i2c_slave.v
+# ** Note: $finish    : ../verilog/i2c_slave_tb.v(177)
+#    Time: 4093 ns  Iteration: 0  Instance: /i2c_slave_tb
+# 1
+# Break in Module i2c_slave_tb at ../verilog/i2c_slave_tb.v line 177
+# .main_pane.wave.interior.cs.body.pw.wf
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:34:52 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 17:34:52 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:34:52 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 17:34:52 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:34:52 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 17:34:53 on Aug 06,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:34:53 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# 
+# Top level modules:
+# 	i2c_slave_tb
+# End time: 17:34:53 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 17:34:54 on Aug 06,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave_tb
+# Loading work.i2c_slave_tb
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave
+# Loading work.i2c_slave
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_div_clk
+# Loading work.i2c_div_clk
+# ** Note: $finish    : ../verilog/i2c_slave_tb.v(177)
+#    Time: 4093 ns  Iteration: 0  Instance: /i2c_slave_tb
+# 1
+# Break in Module i2c_slave_tb at ../verilog/i2c_slave_tb.v line 177
+# .main_pane.wave.interior.cs.body.pw.wf
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:35:32 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 17:35:32 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:35:33 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 17:35:33 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:35:33 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 17:35:33 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:35:33 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# 
+# Top level modules:
+# 	i2c_slave_tb
+# End time: 17:35:33 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 17:35:34 on Aug 06,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave_tb
+# Loading work.i2c_slave_tb
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave
+# Loading work.i2c_slave
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_div_clk
+# Loading work.i2c_div_clk
+# ** Note: $finish    : ../verilog/i2c_slave_tb.v(177)
+#    Time: 4093 ns  Iteration: 0  Instance: /i2c_slave_tb
+# 1
+# Break in Module i2c_slave_tb at ../verilog/i2c_slave_tb.v line 177
+# .main_pane.wave.interior.cs.body.pw.wf
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:36:39 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 17:36:39 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:36:39 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 17:36:39 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:36:39 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 17:36:39 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:36:39 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# 
+# Top level modules:
+# 	i2c_slave_tb
+# End time: 17:36:39 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 17:36:41 on Aug 06,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave_tb
+# Loading work.i2c_slave_tb
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave
+# Loading work.i2c_slave
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_div_clk
+# Loading work.i2c_div_clk
+# ** Note: $finish    : ../verilog/i2c_slave_tb.v(177)
+#    Time: 4093 ns  Iteration: 0  Instance: /i2c_slave_tb
+# 1
+# Break in Module i2c_slave_tb at ../verilog/i2c_slave_tb.v line 177
+# .main_pane.wave.interior.cs.body.pw.wf
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:37:20 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 17:37:20 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:37:21 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 17:37:21 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:37:21 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 17:37:21 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:37:21 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# 
+# Top level modules:
+# 	i2c_slave_tb
+# End time: 17:37:21 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 17:37:22 on Aug 06,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave_tb
+# Loading work.i2c_slave_tb
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave
+# Loading work.i2c_slave
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_div_clk
+# Loading work.i2c_div_clk
+# ** Note: $finish    : ../verilog/i2c_slave_tb.v(177)
+#    Time: 4093 ns  Iteration: 0  Instance: /i2c_slave_tb
+# 1
+# Break in Module i2c_slave_tb at ../verilog/i2c_slave_tb.v line 177
+# .main_pane.wave.interior.cs.body.pw.wf
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:42:31 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 17:42:31 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:42:31 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 17:42:32 on Aug 06,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:42:32 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 17:42:32 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:42:32 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# 
+# Top level modules:
+# 	i2c_slave_tb
+# End time: 17:42:32 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 17:42:35 on Aug 06,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave_tb
+# Loading work.i2c_slave_tb
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave
+# Loading work.i2c_slave
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_div_clk
+# Loading work.i2c_div_clk
+# ** Note: $finish    : ../verilog/i2c_slave_tb.v(244)
+#    Time: 5853 ns  Iteration: 0  Instance: /i2c_slave_tb
+# 1
+# Break in Module i2c_slave_tb at ../verilog/i2c_slave_tb.v line 244
+# .main_pane.wave.interior.cs.body.pw.wf
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:45:01 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 17:45:01 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:45:01 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 17:45:01 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:45:02 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 17:45:02 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:45:02 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# 
+# Top level modules:
+# 	i2c_slave_tb
+# End time: 17:45:02 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 17:45:03 on Aug 06,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave_tb
+# Loading work.i2c_slave_tb
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave
+# Loading work.i2c_slave
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_div_clk
+# Loading work.i2c_div_clk
+# ** Note: $finish    : ../verilog/i2c_slave_tb.v(248)
+#    Time: 6013 ns  Iteration: 0  Instance: /i2c_slave_tb
+# 1
+# Break in Module i2c_slave_tb at ../verilog/i2c_slave_tb.v line 248
+# .main_pane.wave.interior.cs.body.pw.wf
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:48:54 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 17:48:54 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:48:54 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 17:48:54 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:48:54 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 17:48:54 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:48:54 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# 
+# Top level modules:
+# 	i2c_slave_tb
+# End time: 17:48:54 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 17:48:55 on Aug 06,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave_tb
+# Loading work.i2c_slave_tb
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave
+# Loading work.i2c_slave
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_div_clk
+# Loading work.i2c_div_clk
+# ** Note: $finish    : ../verilog/i2c_slave_tb.v(257)
+#    Time: 6333 ns  Iteration: 0  Instance: /i2c_slave_tb
+# 1
+# Break in Module i2c_slave_tb at ../verilog/i2c_slave_tb.v line 257
+# .main_pane.wave.interior.cs.body.pw.wf
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:50:27 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 17:50:27 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:50:27 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 17:50:27 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:50:27 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 17:50:27 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:50:27 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# 
+# Top level modules:
+# 	i2c_slave_tb
+# End time: 17:50:27 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 17:50:28 on Aug 06,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave_tb
+# Loading work.i2c_slave_tb
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave
+# Loading work.i2c_slave
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_div_clk
+# Loading work.i2c_div_clk
+# ** Note: $finish    : ../verilog/i2c_slave_tb.v(257)
+#    Time: 6333 ns  Iteration: 0  Instance: /i2c_slave_tb
+# 1
+# Break in Module i2c_slave_tb at ../verilog/i2c_slave_tb.v line 257
+# .main_pane.wave.interior.cs.body.pw.wf
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:52:59 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 17:52:59 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:52:59 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 17:52:59 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:52:59 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 17:52:59 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:52:59 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# 
+# Top level modules:
+# 	i2c_slave_tb
+# End time: 17:52:59 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 17:53:00 on Aug 06,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave_tb
+# Loading work.i2c_slave_tb
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave
+# Loading work.i2c_slave
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_div_clk
+# Loading work.i2c_div_clk
+# ** Note: $finish    : ../verilog/i2c_slave_tb.v(324)
+#    Time: 8093 ns  Iteration: 0  Instance: /i2c_slave_tb
+# 1
+# Break in Module i2c_slave_tb at ../verilog/i2c_slave_tb.v line 324
+# .main_pane.wave.interior.cs.body.pw.wf
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:01:34 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 18:01:34 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:01:34 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 18:01:34 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:01:34 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 18:01:34 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:01:34 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# ** Error: ../verilog/i2c_slave_tb.v(324): (vlog-2110) Illegal reference to net "sda_en".
+# 
+# End time: 18:01:34 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: D:/STUDY/Modelsim/win64/vlog failed.
+# Error in macro ./i2c_slave.do line 4
+# D:/STUDY/Modelsim/win64/vlog failed.
+#     while executing
+# "vlog ../verilog/i2c_slave_tb.v"
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:02:25 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 18:02:25 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:02:25 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 18:02:26 on Aug 06,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:02:26 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 18:02:26 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:02:26 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# 
+# Top level modules:
+# 	i2c_slave_tb
+# End time: 18:02:26 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 18:02:27 on Aug 06,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave_tb
+# Loading work.i2c_slave_tb
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave
+# Loading work.i2c_slave
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_div_clk
+# Loading work.i2c_div_clk
+# ** Note: $finish    : ../verilog/i2c_slave_tb.v(377)
+#    Time: 9773 ns  Iteration: 0  Instance: /i2c_slave_tb
+# 1
+# Break in Module i2c_slave_tb at ../verilog/i2c_slave_tb.v line 377
+# .main_pane.wave.interior.cs.body.pw.wf
+add wave -position end  sim:/i2c_slave_tb/slave_duf/sda_out
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+run -all
+# ** Note: $finish    : ../verilog/i2c_slave_tb.v(377)
+#    Time: 9773 ns  Iteration: 0  Instance: /i2c_slave_tb
+# 1
+# Break in Module i2c_slave_tb at ../verilog/i2c_slave_tb.v line 377
+run -all
+# Break key hit
+# Break in Module i2c_slave_tb at ../verilog/i2c_slave_tb.v line 24
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:07:42 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 18:07:42 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:07:42 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 18:07:42 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:07:42 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 18:07:42 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:07:42 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# 
+# Top level modules:
+# 	i2c_slave_tb
+# End time: 18:07:42 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 18:07:43 on Aug 06,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave_tb
+# Loading work.i2c_slave_tb
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave
+# Loading work.i2c_slave
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_div_clk
+# Loading work.i2c_div_clk
+# ** Note: $finish    : ../verilog/i2c_slave_tb.v(376)
+#    Time: 9693 ns  Iteration: 0  Instance: /i2c_slave_tb
+# 1
+# Break in Module i2c_slave_tb at ../verilog/i2c_slave_tb.v line 376
+# .main_pane.wave.interior.cs.body.pw.wf
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:23:22 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 18:23:22 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:23:22 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 18:23:22 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:23:22 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 18:23:22 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:23:22 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# 
+# Top level modules:
+# 	i2c_slave_tb
+# End time: 18:23:22 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 18:23:23 on Aug 06,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave_tb
+# Loading work.i2c_slave_tb
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave
+# Loading work.i2c_slave
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_div_clk
+# Loading work.i2c_div_clk
+# ** Note: $finish    : ../verilog/i2c_slave_tb.v(431)
+#    Time: 11613 ns  Iteration: 0  Instance: /i2c_slave_tb
+# 1
+# Break in Module i2c_slave_tb at ../verilog/i2c_slave_tb.v line 431
+# .main_pane.wave.interior.cs.body.pw.wf
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:25:06 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 18:25:06 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:25:06 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 18:25:06 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:25:06 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 18:25:06 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:25:06 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# 
+# Top level modules:
+# 	i2c_slave_tb
+# End time: 18:25:06 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 18:25:07 on Aug 06,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave_tb
+# Loading work.i2c_slave_tb
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave
+# Loading work.i2c_slave
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_div_clk
+# Loading work.i2c_div_clk
+# ** Note: $finish    : ../verilog/i2c_slave_tb.v(437)
+#    Time: 11773 ns  Iteration: 0  Instance: /i2c_slave_tb
+# 1
+# Break in Module i2c_slave_tb at ../verilog/i2c_slave_tb.v line 437
+# .main_pane.wave.interior.cs.body.pw.wf
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:32:32 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 18:32:32 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:32:32 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 18:32:32 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:32:33 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 18:32:33 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:32:33 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# 
+# Top level modules:
+# 	i2c_slave_tb
+# End time: 18:32:33 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 18:32:34 on Aug 06,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave_tb
+# Loading work.i2c_slave_tb
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave
+# Loading work.i2c_slave
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_div_clk
+# Loading work.i2c_div_clk
+# ** Note: $finish    : ../verilog/i2c_slave_tb.v(439)
+#    Time: 11773 ns  Iteration: 0  Instance: /i2c_slave_tb
+# 1
+# Break in Module i2c_slave_tb at ../verilog/i2c_slave_tb.v line 439
+# .main_pane.wave.interior.cs.body.pw.wf
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:40:11 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 18:40:11 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:40:11 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 18:40:12 on Aug 06,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:40:12 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 18:40:12 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:40:12 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# 
+# Top level modules:
+# 	i2c_slave_tb
+# End time: 18:40:12 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 18:40:19 on Aug 06,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave_tb
+# Loading work.i2c_slave_tb
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave
+# Loading work.i2c_slave
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_div_clk
+# Loading work.i2c_div_clk
+# ** Note: $finish    : ../verilog/i2c_slave_tb.v(438)
+#    Time: 11773 ns  Iteration: 0  Instance: /i2c_slave_tb
+# 1
+# Break in Module i2c_slave_tb at ../verilog/i2c_slave_tb.v line 438
+# .main_pane.wave.interior.cs.body.pw.wf
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:41:24 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 18:41:24 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:41:24 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 18:41:24 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:41:24 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 18:41:24 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:41:25 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# 
+# Top level modules:
+# 	i2c_slave_tb
+# End time: 18:41:25 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 18:41:30 on Aug 06,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave_tb
+# Loading work.i2c_slave_tb
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave
+# Loading work.i2c_slave
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_div_clk
+# Loading work.i2c_div_clk
+# ** Note: $finish    : ../verilog/i2c_slave_tb.v(438)
+#    Time: 11773 ns  Iteration: 0  Instance: /i2c_slave_tb
+# 1
+# Break in Module i2c_slave_tb at ../verilog/i2c_slave_tb.v line 438
+# .main_pane.wave.interior.cs.body.pw.wf
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:44:08 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 18:44:08 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:44:08 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 18:44:08 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:44:08 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 18:44:08 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:44:08 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# 
+# Top level modules:
+# 	i2c_slave_tb
+# End time: 18:44:08 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 18:44:11 on Aug 06,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave_tb
+# Loading work.i2c_slave_tb
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave
+# Loading work.i2c_slave
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_div_clk
+# Loading work.i2c_div_clk
+# ** Note: $finish    : ../verilog/i2c_slave_tb.v(449)
+#    Time: 11933 ns  Iteration: 0  Instance: /i2c_slave_tb
+# 1
+# Break in Module i2c_slave_tb at ../verilog/i2c_slave_tb.v line 449
+# .main_pane.wave.interior.cs.body.pw.wf
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:56:34 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 18:56:34 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:56:34 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 18:56:34 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:56:34 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 18:56:34 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:56:34 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# ** Error: (vlog-13069) ../verilog/i2c_slave_tb.v(453): near ";": syntax error, unexpected ';', expecting ')'.
+# 
+# End time: 18:56:34 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: D:/STUDY/Modelsim/win64/vlog failed.
+# Error in macro ./i2c_slave.do line 4
+# D:/STUDY/Modelsim/win64/vlog failed.
+#     while executing
+# "vlog ../verilog/i2c_slave_tb.v"
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:56:50 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 18:56:50 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:56:50 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 18:56:50 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:56:50 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 18:56:51 on Aug 06,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:56:51 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# 
+# Top level modules:
+# 	i2c_slave_tb
+# End time: 18:56:51 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 18:56:52 on Aug 06,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave_tb
+# Loading work.i2c_slave_tb
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave
+# Loading work.i2c_slave
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_div_clk
+# Loading work.i2c_div_clk
+# ** Note: $finish    : ../verilog/i2c_slave_tb.v(458)
+#    Time: 13693 ns  Iteration: 0  Instance: /i2c_slave_tb
+# 1
+# Break in Module i2c_slave_tb at ../verilog/i2c_slave_tb.v line 458
+# .main_pane.wave.interior.cs.body.pw.wf
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 19:01:17 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 19:01:17 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 19:01:17 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 19:01:17 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 19:01:17 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 19:01:17 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 19:01:18 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# 
+# Top level modules:
+# 	i2c_slave_tb
+# End time: 19:01:18 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 19:01:19 on Aug 06,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave_tb
+# Loading work.i2c_slave_tb
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave
+# Loading work.i2c_slave
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_div_clk
+# Loading work.i2c_div_clk
+# ** Note: $finish    : ../verilog/i2c_slave_tb.v(458)
+#    Time: 13693 ns  Iteration: 0  Instance: /i2c_slave_tb
+# 1
+# Break in Module i2c_slave_tb at ../verilog/i2c_slave_tb.v line 458
+# .main_pane.wave.interior.cs.body.pw.wf
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 19:03:24 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 19:03:24 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 19:03:24 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 19:03:24 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 19:03:24 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 19:03:24 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 19:03:24 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# 
+# Top level modules:
+# 	i2c_slave_tb
+# End time: 19:03:24 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 19:03:25 on Aug 06,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave_tb
+# Loading work.i2c_slave_tb
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave
+# Loading work.i2c_slave
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_div_clk
+# Loading work.i2c_div_clk
+# ** Note: $finish    : ../verilog/i2c_slave_tb.v(458)
+#    Time: 13693 ns  Iteration: 0  Instance: /i2c_slave_tb
+# 1
+# Break in Module i2c_slave_tb at ../verilog/i2c_slave_tb.v line 458
+# .main_pane.wave.interior.cs.body.pw.wf
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 19:05:12 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 19:05:12 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 19:05:12 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 19:05:12 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 19:05:13 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 19:05:13 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 19:05:13 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# 
+# Top level modules:
+# 	i2c_slave_tb
+# End time: 19:05:13 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 19:05:14 on Aug 06,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave_tb
+# Loading work.i2c_slave_tb
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave
+# Loading work.i2c_slave
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_div_clk
+# Loading work.i2c_div_clk
+# ** Note: $finish    : ../verilog/i2c_slave_tb.v(458)
+#    Time: 13693 ns  Iteration: 0  Instance: /i2c_slave_tb
+# 1
+# Break in Module i2c_slave_tb at ../verilog/i2c_slave_tb.v line 458
+# .main_pane.wave.interior.cs.body.pw.wf
+do i2c_slave.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 19:07:51 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_defines.v 
+# End time: 19:07:51 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 19:07:51 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_frq.v 
+# -- Compiling module i2c_div_clk
+# 
+# Top level modules:
+# 	i2c_div_clk
+# End time: 19:07:51 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 19:07:51 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 19:07:51 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 19:07:51 on Aug 06,2020
+# vlog -reportprogress 300 ../verilog/i2c_slave_tb.v 
+# -- Compiling module i2c_slave_tb
+# 
+# Top level modules:
+# 	i2c_slave_tb
+# End time: 19:07:51 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 19:07:52 on Aug 06,2020
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave_tb
+# Loading work.i2c_slave_tb
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_slave
+# Loading work.i2c_slave
+# Refreshing C:/Users/67551/Desktop/I2C_slave/modelsim_sim/work.i2c_div_clk
+# Loading work.i2c_div_clk
+# ** Note: $finish    : ../verilog/i2c_slave_tb.v(458)
+#    Time: 13693 ns  Iteration: 0  Instance: /i2c_slave_tb
+# 1
+# Break in Module i2c_slave_tb at ../verilog/i2c_slave_tb.v line 458
+# .main_pane.wave.interior.cs.body.pw.wf
+# End time: 19:13:09 on Aug 06,2020, Elapsed time: 0:05:17
+# Errors: 0, Warnings: 1

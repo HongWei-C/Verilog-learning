@@ -1,0 +1,18 @@
+C:/Users/67551/Desktop/I2C_slave/verilog/i2c_frq.v {1 {vlog -work work -vopt -stats=none C:/Users/67551/Desktop/I2C_slave/verilog/i2c_frq.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module i2c_div_clk
+
+Top level modules:
+	i2c_div_clk
+
+} {} {}} C:/Users/67551/Desktop/I2C_slave/verilog/i2c_defines.v {1 {vlog -work work -vopt -stats=none C:/Users/67551/Desktop/I2C_slave/verilog/i2c_defines.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+
+} {} {}} C:/Users/67551/Desktop/I2C_slave/verilog/i2c_fre_tb.v {1 {vlog -work work -vopt -stats=none C:/Users/67551/Desktop/I2C_slave/verilog/i2c_fre_tb.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module i2c_div_clk_tb
+
+Top level modules:
+	i2c_div_clk_tb
+
+} {} {}}

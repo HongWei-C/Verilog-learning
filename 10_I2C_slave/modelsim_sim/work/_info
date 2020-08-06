@@ -1,0 +1,87 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/STUDY/Modelsim/win64
+vi2c_div_clk
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 _YmmWAkco7z1GSaX<U9bZ1
+IY4@XScn4Oh1hX:fhLQ9Xi1
+Z1 dC:/Users/67551/Desktop/I2C_slave/modelsim_sim
+w1596617158
+8../verilog/i2c_frq.v
+F../verilog/i2c_frq.v
+L0 3
+Z2 OL;L;10.4;61
+!s108 1596712071.538000
+!s107 ..\verilog\i2c_defines.v|../verilog/i2c_frq.v|
+!s90 -reportprogress|300|../verilog/i2c_frq.v|
+!i113 0
+Z3 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vi2c_div_clk_tb
+!s110 1596704706
+!i10b 1
+!s100 1?jh4cbGHKTOI6T3jQ`6z3
+I`5bO<l``eUd8c_m>2C`R@1
+R0
+R1
+w1596617022
+8C:/Users/67551/Desktop/I2C_slave/verilog/i2c_fre_tb.v
+FC:/Users/67551/Desktop/I2C_slave/verilog/i2c_fre_tb.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1596704706.626000
+!s107 C:\Users\67551\Desktop\I2C_slave\verilog\i2c_defines.v|C:/Users/67551/Desktop/I2C_slave/verilog/i2c_fre_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/67551/Desktop/I2C_slave/verilog/i2c_fre_tb.v|
+!i113 0
+o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vi2c_slave
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 U_8NIZf]f>J4Mj3UC>JR11
+I6MK=zCh@iQd?;VG;KG?WA3
+R1
+w1596711960
+8../verilog/i2c_slave.v
+F../verilog/i2c_slave.v
+L0 3
+R2
+!s108 1596712071.632000
+!s107 ..\verilog\i2c_defines.v|../verilog/i2c_slave.v|
+!s90 -reportprogress|300|../verilog/i2c_slave.v|
+!i113 0
+R3
+vi2c_slave_tb
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 bPGmJ6Mc<>o@SAI?IF8AF1
+I61KCO[IDPiAaa43f5h[690
+R1
+w1596712067
+8../verilog/i2c_slave_tb.v
+F../verilog/i2c_slave_tb.v
+L0 2
+R2
+!s108 1596712071.727000
+!s107 ..\verilog\i2c_defines.v|../verilog/i2c_slave_tb.v|
+!s90 -reportprogress|300|../verilog/i2c_slave_tb.v|
+!i113 0
+R3
