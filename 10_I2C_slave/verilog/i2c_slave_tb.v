@@ -43,7 +43,7 @@ module i2c_slave_tb ();
     delay(8);
     //DEV_ADDR 1111_010+W(0)
     //7
-    sda_in      = 1'b0;
+    sda_in      = 1'b1;
     delay(2);
     scl         = 1'b1;
     delay(4);

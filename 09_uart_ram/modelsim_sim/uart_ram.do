@@ -5,6 +5,8 @@ vlog ../verilog/uart_tx.v
 vlog ../verilog/uart_top.v
 vlog ../verilog/uart_ram.v
 vlog ../verilog/uart_ram_tb.v
+vlog ../vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/simulation/dist_mem_gen_v8_0.v
+vlog ../vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/sim/dmg_ram.v
 vsim -novopt work.uart_ram_tb
 
 onerror {resume}

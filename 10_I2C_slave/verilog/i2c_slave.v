@@ -297,7 +297,17 @@ module i2c_slave (
       endcase
     end
   end
-  always @ ( rst_n or state or data_cnt or R_wait_cnt ) begin
+  //对sda_in进行采样，防止组合逻辑敏感电平在错误位置跳变，造成状态错误
+  reg           sda_rr;
+  always @ ( negedge rst_n or posedge sys_clk ) begin
+    if ( ~rst_n ) begin
+      sda_rr    <= 1'b0;
+    end
+    else if ( div_clk_up && scl ) begin
+      sda_rr    <= sda_in;
+    end
+  end
+  always @ ( rst_n or state or data_cnt or R_wait_cnt or sda_data_in or sda_rr ) begin
     if ( ~rst_n ) begin
       sda_data_r    = 8'b0;
       sda_data_out  = 8'h00;
@@ -320,7 +330,7 @@ module i2c_slave (
           sda_out       = 1'b1;
         end
         DEV_ADDR: begin
-          sda_data_r    = { sda_data_r[6:0] , sda_in };
+          sda_data_r[7-data_cnt]  =  sda_rr;
           wr            = 1'b0;
           sda_en        = 1'b0;
           sda_out       = 1'b1;
@@ -351,7 +361,7 @@ module i2c_slave (
           sda_out       = 1'b1;
         end
         W_DATA: begin
-          sda_data_r    = { sda_data_r[6:0] , sda_in };
+          sda_data_r[7-data_cnt]  = sda_rr;
           wr            = 1'b0;
           sda_en        = 1'b0;
           sda_out       = 1'b1;

@@ -1,160 +1,78 @@
-# Compile of uart_rx_tb.v was successful.
-# Compile of uart_baud.v was successful.
-# Compile of uart_defines.v was successful.
-# Compile of uart_rx.v was successful.
-# Compile of uart_tx_tb.v was successful.
-# Compile of uart_tx.v was successful.
-# Compile of uart_top.v was successful.
-# Compile of uart_top_tb.v was successful.
-# Compile of uart_ram_tb.v was successful.
-# Compile of uart_ram.v was successful.
-# Compile of dmg_ram.v was successful.
-# 11 compiles, 0 failed with no errors.
-# Compile of uart_rx_tb.v was successful.
-# Compile of uart_baud.v was successful.
-# Compile of uart_defines.v was successful.
-# Compile of uart_rx.v was successful.
-# Compile of uart_tx_tb.v was successful.
-# Compile of uart_tx.v was successful.
-# Compile of uart_top.v was successful.
-# Compile of uart_top_tb.v was successful.
-# Compile of uart_ram_tb.v was successful.
-# Compile of uart_ram.v was successful.
-# Compile of dmg_ram.v was successful.
-# 11 compiles, 0 failed with no errors.
-vsim -novopt work.uart_ram_tb
-# vsim -gui C:\Users\67551\Desktop\uart_ram\modelsim_sim\uart_ram.mpf 
-# Start time: 08:46:25 on Aug 03,2020
-# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
-# 
-# Refreshing C:/Users/67551/Desktop/uart_ram/modelsim_sim/work.uart_ram_tb
-# Loading work.uart_ram_tb
-# Refreshing C:/Users/67551/Desktop/uart_ram/modelsim_sim/work.uart_ram
-# Loading work.uart_ram
-# Refreshing C:/Users/67551/Desktop/uart_ram/modelsim_sim/work.uart_top
-# Loading work.uart_top
-# Refreshing C:/Users/67551/Desktop/uart_ram/modelsim_sim/work.uart_baud
-# Loading work.uart_baud
-# Refreshing C:/Users/67551/Desktop/uart_ram/modelsim_sim/work.uart_rx
-# Loading work.uart_rx
-# Refreshing C:/Users/67551/Desktop/uart_ram/modelsim_sim/work.uart_tx
-# Loading work.uart_tx
-# Refreshing C:/Users/67551/Desktop/uart_ram/modelsim_sim/work.dmg_ram
-# Loading work.dmg_ram
-# ** Error: (vsim-3033) C:/Users/67551/Desktop/uart_ram/vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/sim/dmg_ram.v(103): Instantiation of 'dist_mem_gen_v8_0_13' failed. The design unit was not found.
-#    Time: 0 ns  Iteration: 0  Instance: /uart_ram_tb/ram_1/sram_t File: C:/Users/67551/Desktop/uart_ram/vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/sim/dmg_ram.v
-#         Searched libraries:
-#             C:/Users/67551/Desktop/uart_ram/modelsim_sim/work
-# Error loading design
-# Compile of uart_rx_tb.v was successful.
-# Compile of uart_baud.v was successful.
-# Compile of uart_defines.v was successful.
-# Compile of uart_rx.v was successful.
-# Compile of uart_tx_tb.v was successful.
-# Compile of uart_tx.v was successful.
-# Compile of uart_top.v was successful.
-# Compile of uart_top_tb.v was successful.
-# Compile of uart_ram_tb.v was successful.
-# Compile of uart_ram.v was successful.
-# Compile of dmg_ram.v was successful.
-# Compile of dist_mem_gen_v8_0.v was successful.
-# 12 compiles, 0 failed with no errors.
-vsim -novopt work.uart_ram_tb
-# vsim 
-# Start time: 08:47:25 on Aug 03,2020
-# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
-# 
-# Refreshing C:/Users/67551/Desktop/uart_ram/modelsim_sim/work.uart_ram_tb
-# Loading work.uart_ram_tb
-# Refreshing C:/Users/67551/Desktop/uart_ram/modelsim_sim/work.uart_ram
-# Loading work.uart_ram
-# Refreshing C:/Users/67551/Desktop/uart_ram/modelsim_sim/work.uart_top
-# Loading work.uart_top
-# Refreshing C:/Users/67551/Desktop/uart_ram/modelsim_sim/work.uart_baud
-# Loading work.uart_baud
-# Refreshing C:/Users/67551/Desktop/uart_ram/modelsim_sim/work.uart_rx
-# Loading work.uart_rx
-# Refreshing C:/Users/67551/Desktop/uart_ram/modelsim_sim/work.uart_tx
-# Loading work.uart_tx
-# Refreshing C:/Users/67551/Desktop/uart_ram/modelsim_sim/work.dmg_ram
-# Loading work.dmg_ram
-# Refreshing C:/Users/67551/Desktop/uart_ram/modelsim_sim/work.dist_mem_gen_v8_0_13
-# Loading work.dist_mem_gen_v8_0_13
 do uart_ram.do
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 08:47:47 on Aug 03,2020
+# Start time: 19:02:09 on Aug 15,2020
 # vlog -reportprogress 300 ../verilog/uart_defines.v 
-# End time: 08:47:47 on Aug 03,2020, Elapsed time: 0:00:00
+# End time: 19:02:09 on Aug 15,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 08:47:47 on Aug 03,2020
+# Start time: 19:02:09 on Aug 15,2020
 # vlog -reportprogress 300 ../verilog/uart_baud.v 
 # -- Compiling module uart_baud
 # 
 # Top level modules:
 # 	uart_baud
-# End time: 08:47:47 on Aug 03,2020, Elapsed time: 0:00:00
+# End time: 19:02:09 on Aug 15,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 08:47:47 on Aug 03,2020
+# Start time: 19:02:09 on Aug 15,2020
 # vlog -reportprogress 300 ../verilog/uart_rx.v 
 # -- Compiling module uart_rx
 # 
 # Top level modules:
 # 	uart_rx
-# End time: 08:47:47 on Aug 03,2020, Elapsed time: 0:00:00
+# End time: 19:02:09 on Aug 15,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 08:47:47 on Aug 03,2020
+# Start time: 19:02:09 on Aug 15,2020
 # vlog -reportprogress 300 ../verilog/uart_tx.v 
 # -- Compiling module uart_tx
 # 
 # Top level modules:
 # 	uart_tx
-# End time: 08:47:47 on Aug 03,2020, Elapsed time: 0:00:00
+# End time: 19:02:09 on Aug 15,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 08:47:47 on Aug 03,2020
+# Start time: 19:02:09 on Aug 15,2020
 # vlog -reportprogress 300 ../verilog/uart_top.v 
 # -- Compiling module uart_top
 # 
 # Top level modules:
 # 	uart_top
-# End time: 08:47:47 on Aug 03,2020, Elapsed time: 0:00:00
+# End time: 19:02:09 on Aug 15,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 08:47:47 on Aug 03,2020
+# Start time: 19:02:09 on Aug 15,2020
 # vlog -reportprogress 300 ../verilog/uart_ram.v 
 # -- Compiling module uart_ram
 # 
 # Top level modules:
 # 	uart_ram
-# End time: 08:47:47 on Aug 03,2020, Elapsed time: 0:00:00
+# End time: 19:02:09 on Aug 15,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 08:47:47 on Aug 03,2020
+# Start time: 19:02:09 on Aug 15,2020
 # vlog -reportprogress 300 ../verilog/uart_ram_tb.v 
 # -- Compiling module uart_ram_tb
 # 
 # Top level modules:
 # 	uart_ram_tb
-# End time: 08:47:47 on Aug 03,2020, Elapsed time: 0:00:00
+# End time: 19:02:10 on Aug 15,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vsim 
-# Start time: 08:47:48 on Aug 03,2020
+# vsim -gui D:\STUDY\GitHubWork\Verilog-learning\09_uart_ram\modelsim_sim\uart_ram.mpf 
+# Start time: 19:02:10 on Aug 15,2020
 # ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
 # 
-# Refreshing C:/Users/67551/Desktop/uart_ram/modelsim_sim/work.uart_ram_tb
+# Refreshing D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/modelsim_sim/work.uart_ram_tb
 # Loading work.uart_ram_tb
-# Refreshing C:/Users/67551/Desktop/uart_ram/modelsim_sim/work.uart_ram
+# Refreshing D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/modelsim_sim/work.uart_ram
 # Loading work.uart_ram
-# Refreshing C:/Users/67551/Desktop/uart_ram/modelsim_sim/work.uart_top
+# Refreshing D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/modelsim_sim/work.uart_top
 # Loading work.uart_top
-# Refreshing C:/Users/67551/Desktop/uart_ram/modelsim_sim/work.uart_baud
+# Refreshing D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/modelsim_sim/work.uart_baud
 # Loading work.uart_baud
-# Refreshing C:/Users/67551/Desktop/uart_ram/modelsim_sim/work.uart_rx
+# Refreshing D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/modelsim_sim/work.uart_rx
 # Loading work.uart_rx
-# Refreshing C:/Users/67551/Desktop/uart_ram/modelsim_sim/work.uart_tx
+# Refreshing D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/modelsim_sim/work.uart_tx
 # Loading work.uart_tx
 # Loading work.dmg_ram
 # Loading work.dist_mem_gen_v8_0_13
@@ -168,166 +86,114 @@ do uart_ram.do
 # 1
 # Break in Module uart_ram_tb at ../verilog/uart_ram_tb.v line 166
 # .main_pane.wave.interior.cs.body.pw.wf
+quit -sim
 do uart_ram.do
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 08:49:08 on Aug 03,2020
+# Start time: 19:06:47 on Aug 15,2020
 # vlog -reportprogress 300 ../verilog/uart_defines.v 
-# End time: 08:49:08 on Aug 03,2020, Elapsed time: 0:00:00
+# End time: 19:06:47 on Aug 15,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 08:49:08 on Aug 03,2020
+# Start time: 19:06:47 on Aug 15,2020
 # vlog -reportprogress 300 ../verilog/uart_baud.v 
 # -- Compiling module uart_baud
 # 
 # Top level modules:
 # 	uart_baud
-# End time: 08:49:08 on Aug 03,2020, Elapsed time: 0:00:00
+# End time: 19:06:47 on Aug 15,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 08:49:08 on Aug 03,2020
+# Start time: 19:06:47 on Aug 15,2020
 # vlog -reportprogress 300 ../verilog/uart_rx.v 
 # -- Compiling module uart_rx
 # 
 # Top level modules:
 # 	uart_rx
-# End time: 08:49:08 on Aug 03,2020, Elapsed time: 0:00:00
+# End time: 19:06:47 on Aug 15,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 08:49:08 on Aug 03,2020
+# Start time: 19:06:47 on Aug 15,2020
 # vlog -reportprogress 300 ../verilog/uart_tx.v 
 # -- Compiling module uart_tx
 # 
 # Top level modules:
 # 	uart_tx
-# End time: 08:49:09 on Aug 03,2020, Elapsed time: 0:00:01
+# End time: 19:06:47 on Aug 15,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 08:49:09 on Aug 03,2020
+# Start time: 19:06:48 on Aug 15,2020
 # vlog -reportprogress 300 ../verilog/uart_top.v 
 # -- Compiling module uart_top
 # 
 # Top level modules:
 # 	uart_top
-# End time: 08:49:09 on Aug 03,2020, Elapsed time: 0:00:00
+# End time: 19:06:48 on Aug 15,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 08:49:09 on Aug 03,2020
+# Start time: 19:06:48 on Aug 15,2020
 # vlog -reportprogress 300 ../verilog/uart_ram.v 
 # -- Compiling module uart_ram
 # 
 # Top level modules:
 # 	uart_ram
-# End time: 08:49:09 on Aug 03,2020, Elapsed time: 0:00:00
+# End time: 19:06:48 on Aug 15,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 08:49:09 on Aug 03,2020
+# Start time: 19:06:48 on Aug 15,2020
 # vlog -reportprogress 300 ../verilog/uart_ram_tb.v 
 # -- Compiling module uart_ram_tb
 # 
 # Top level modules:
 # 	uart_ram_tb
-# End time: 08:49:09 on Aug 03,2020, Elapsed time: 0:00:00
+# End time: 19:06:48 on Aug 15,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 08:49:09 on Aug 03,2020
-# vlog -reportprogress 300 dmg_ram.v 
-# ** Error: (vlog-7) Failed to open design unit file "dmg_ram.v" in read mode.
-# 
-# No such file or directory. (errno = ENOENT)
-# End time: 08:49:09 on Aug 03,2020, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: D:/STUDY/Modelsim/win64/vlog failed.
-# Error in macro ./uart_ram.do line 8
-# D:/STUDY/Modelsim/win64/vlog failed.
-#     while executing
-# "vlog dmg_ram.v"
-do uart_ram.do
-# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 08:49:41 on Aug 03,2020
-# vlog -reportprogress 300 ../verilog/uart_defines.v 
-# End time: 08:49:41 on Aug 03,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 08:49:41 on Aug 03,2020
-# vlog -reportprogress 300 ../verilog/uart_baud.v 
-# -- Compiling module uart_baud
+# Start time: 19:06:48 on Aug 15,2020
+# vlog -reportprogress 300 ../vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/simulation/dist_mem_gen_v8_0.v 
+# -- Compiling module dist_mem_gen_v8_0_13
 # 
 # Top level modules:
-# 	uart_baud
-# End time: 08:49:41 on Aug 03,2020, Elapsed time: 0:00:00
+# 	dist_mem_gen_v8_0_13
+# End time: 19:06:48 on Aug 15,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 08:49:41 on Aug 03,2020
-# vlog -reportprogress 300 ../verilog/uart_rx.v 
-# -- Compiling module uart_rx
+# Start time: 19:06:48 on Aug 15,2020
+# vlog -reportprogress 300 ../vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/sim/dmg_ram.v 
+# -- Compiling module dmg_ram
 # 
 # Top level modules:
-# 	uart_rx
-# End time: 08:49:41 on Aug 03,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 08:49:42 on Aug 03,2020
-# vlog -reportprogress 300 ../verilog/uart_tx.v 
-# -- Compiling module uart_tx
-# 
-# Top level modules:
-# 	uart_tx
-# End time: 08:49:42 on Aug 03,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 08:49:42 on Aug 03,2020
-# vlog -reportprogress 300 ../verilog/uart_top.v 
-# -- Compiling module uart_top
-# 
-# Top level modules:
-# 	uart_top
-# End time: 08:49:42 on Aug 03,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 08:49:42 on Aug 03,2020
-# vlog -reportprogress 300 ../verilog/uart_ram.v 
-# -- Compiling module uart_ram
-# 
-# Top level modules:
-# 	uart_ram
-# End time: 08:49:42 on Aug 03,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 08:49:42 on Aug 03,2020
-# vlog -reportprogress 300 ../verilog/uart_ram_tb.v 
-# -- Compiling module uart_ram_tb
-# 
-# Top level modules:
-# 	uart_ram_tb
-# End time: 08:49:42 on Aug 03,2020, Elapsed time: 0:00:00
+# 	dmg_ram
+# End time: 19:06:48 on Aug 15,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim 
-# Start time: 08:49:43 on Aug 03,2020
+# Start time: 19:06:48 on Aug 15,2020
 # ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
 # 
-# Refreshing C:/Users/67551/Desktop/uart_ram/modelsim_sim/work.uart_ram_tb
+# Refreshing D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/modelsim_sim/work.uart_ram_tb
 # Loading work.uart_ram_tb
-# Refreshing C:/Users/67551/Desktop/uart_ram/modelsim_sim/work.uart_ram
+# Refreshing D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/modelsim_sim/work.uart_ram
 # Loading work.uart_ram
-# Refreshing C:/Users/67551/Desktop/uart_ram/modelsim_sim/work.uart_top
+# Refreshing D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/modelsim_sim/work.uart_top
 # Loading work.uart_top
-# Refreshing C:/Users/67551/Desktop/uart_ram/modelsim_sim/work.uart_baud
+# Refreshing D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/modelsim_sim/work.uart_baud
 # Loading work.uart_baud
-# Refreshing C:/Users/67551/Desktop/uart_ram/modelsim_sim/work.uart_rx
+# Refreshing D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/modelsim_sim/work.uart_rx
 # Loading work.uart_rx
-# Refreshing C:/Users/67551/Desktop/uart_ram/modelsim_sim/work.uart_tx
+# Refreshing D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/modelsim_sim/work.uart_tx
 # Loading work.uart_tx
+# Refreshing D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/modelsim_sim/work.dmg_ram
 # Loading work.dmg_ram
+# Refreshing D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/modelsim_sim/work.dist_mem_gen_v8_0_13
 # Loading work.dist_mem_gen_v8_0_13
 # WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
 # ** Warning: (vsim-7) Failed to open readmem file "dmg_ram.mif" in read mode.
 # 
-# No such file or directory. (errno = ENOENT)    : C:/Users/67551/Desktop/uart_ram/vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/simulation/dist_mem_gen_v8_0.v(234)
+# No such file or directory. (errno = ENOENT)    : ../vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/simulation/dist_mem_gen_v8_0.v(234)
 #    Time: 0 ps  Iteration: 0  Instance: /uart_ram_tb/ram_1/sram_t/inst
 # ** Note: $finish    : ../verilog/uart_ram_tb.v(166)
 #    Time: 11033 ns  Iteration: 0  Instance: /uart_ram_tb
 # 1
 # Break in Module uart_ram_tb at ../verilog/uart_ram_tb.v line 166
 # .main_pane.wave.interior.cs.body.pw.wf
-# End time: 09:17:51 on Aug 03,2020, Elapsed time: 0:28:08
+# End time: 19:07:13 on Aug 15,2020, Elapsed time: 0:00:25
 # Errors: 0, Warnings: 2

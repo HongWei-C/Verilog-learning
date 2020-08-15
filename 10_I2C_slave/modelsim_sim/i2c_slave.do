@@ -12,6 +12,7 @@ add wave -noupdate -label div_clk_up -radix binary /i2c_slave_tb/slave_duf/div_c
 add wave -noupdate -label bps_clk_up -radix binary /i2c_slave_tb/slave_duf/bps_clk_up
 add wave -noupdate -label sda_en -radix binary /i2c_slave_tb/sda_en
 add wave -noupdate -label sda_in -radix binary /i2c_slave_tb/sda_in
+add wave -noupdate -label sda_rr -radix binary /i2c_slave_tb/slave_duf/sda_rr
 add wave -noupdate -label sda -radix binary /i2c_slave_tb/sda
 add wave -noupdate -label scl -radix binary /i2c_slave_tb/scl
 add wave -noupdate -label state -radix unsigned /i2c_slave_tb/slave_duf/state
