@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Aug 23 08:58:21 2020
+# Process ID: 11224
+# Current directory: D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3748 D:\STUDY\GitHubWork\Verilog-learning\09_uart_ram\vivado_fpga\vivado.xpr
+# Log file: D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga/vivado.log
+# Journal file: D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga/vivado.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/STUDY/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:10 . Memory (MB): peak = 827.996 ; gain = 182.148
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Aug 23 09:39:58 2020] Launched synth_1...
+Run output will be captured here: D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga/vivado.runs/synth_1/runme.log
+[Sun Aug 23 09:39:58 2020] Launched impl_1...
+Run output will be captured here: D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga/vivado.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 914.008 ; gain = 18.316
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274533183A
+set_property PROGRAM.FILE {D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga/vivado.runs/impl_1/uart_ram.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga/vivado.runs/impl_1/uart_ram.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Aug 23 09:43:40 2020...

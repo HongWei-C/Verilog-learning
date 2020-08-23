@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Sun Aug 23 09:41:54 2020
+| Date             : Sun Aug 23 16:49:57 2020
 | Host             : LAPTOP-E1JQUC07 running 64-bit major release  (build 9200)
 | Command          : report_power -file uart_ram_power_routed.rpt -pb uart_ram_power_summary_routed.pb -rpx uart_ram_power_routed.rpx
 | Design           : uart_ram
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.604        |
+| Total On-Chip Power (W)  | 0.575        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.506        |
+| Dynamic (W)              | 0.476        |
 | Device Static (W)        | 0.099        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 82.2         |
-| Junction Temperature (C) | 27.8         |
+| Max Ambient (C)          | 82.4         |
+| Junction Temperature (C) | 27.6         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,17 +52,17 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Slice Logic              |     0.269 |      285 |       --- |             --- |
-|   LUT as Logic           |     0.250 |       86 |     63400 |            0.14 |
-|   Register               |     0.013 |      104 |    126800 |            0.08 |
+| Slice Logic              |     0.251 |      287 |       --- |             --- |
+|   LUT as Logic           |     0.232 |       86 |     63400 |            0.14 |
+|   Register               |     0.013 |      106 |    126800 |            0.08 |
 |   BUFG                   |     0.006 |        2 |        32 |            6.25 |
 |   LUT as Distributed RAM |    <0.001 |       32 |     19000 |            0.17 |
 |   F7/F8 Muxes            |    <0.001 |       24 |     63400 |            0.04 |
 |   Others                 |     0.000 |        8 |       --- |             --- |
-| Signals                  |     0.161 |      156 |       --- |             --- |
+| Signals                  |     0.150 |      155 |       --- |             --- |
 | I/O                      |     0.075 |        4 |       210 |            1.90 |
 | Static Power             |     0.099 |          |           |                 |
-| Total                    |     0.604 |          |           |                 |
+| Total                    |     0.575 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.455 |       0.439 |      0.016 |
+| Vccint    |       1.000 |     0.425 |       0.409 |      0.016 |
 | Vccaux    |       1.800 |     0.021 |       0.002 |      0.018 |
 | Vcco33    |       3.300 |     0.023 |       0.019 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -139,13 +139,13 @@ Table of Contents
 +----------------+-----------+
 | Name           | Power (W) |
 +----------------+-----------+
-| uart_ram       |     0.506 |
-|   ctrl_for_ram |     0.021 |
-|   top_to_ram   |     0.384 |
-|     top_rx     |     0.210 |
-|       baud_rx  |     0.176 |
-|     top_tx     |     0.174 |
-|       baud_tx  |     0.158 |
+| uart_ram       |     0.476 |
+|   ctrl_for_ram |     0.019 |
+|   top_to_ram   |     0.356 |
+|     top_rx     |     0.193 |
+|       baud_rx  |     0.156 |
+|     top_tx     |     0.163 |
+|       baud_tx  |     0.147 |
 +----------------+-----------+
 
 

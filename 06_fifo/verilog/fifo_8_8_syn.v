@@ -1,6 +1,6 @@
 //同步fifo设计
 `timescale  1ns / 100ps
-module fifo (
+module fifo_8_8_syn (
   wr,
   rd,
   rst_n,

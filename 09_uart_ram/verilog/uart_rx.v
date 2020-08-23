@@ -24,8 +24,6 @@ module uart_rx (
   wire            bps_clk_up_16x;
 
 	wire            rxd;
-  reg             rxd_d;
-	reg							rxd_d1;
   wire            rxd_nege;     //下降沿脉冲，持续一个sys_clk
   reg             rx_start;     //接收过程启动信号  IDLE->START / STOP->START
                                 //通过RXD产生，持续到下一个bps_clk的上升沿
@@ -64,18 +62,18 @@ module uart_rx (
 
 	 //检测RXD串行信号的下降沿(即检测起始信号)，并改善脉冲的持续时间
 	 //两级延迟，滤除小毛刺
+	parameter					rx_dly = 1;		//最小为1,控制rx_start延迟产生时间
+	reg		[rx_dly:0]	rxd_d;				//rx_dly个sys_clk
 	always @ ( posedge sys_clk or negedge rst_n ) begin
     if ( ~rst_n ) begin
-      rxd_d <= 1'b1;
-			rxd_d1	<= 1'b1;
+      rxd_d <= { (rx_dly+1) {1'b1}};
     end
     else begin
-      rxd_d <=  rxd;
-			rxd_d1<=	rxd_d;
+      rxd_d <=  { rxd , rxd_d[rx_dly:1] };
     end
   end
   //防止在START或BITx等未接收完的状态下产生rx_start信号
-  assign  rxd_nege  = rx_bits_ok ? ( rxd_d1 & ~rxd_d ) : 1'b0;
+  assign  rxd_nege  = rx_bits_ok ? ( rxd_d[0] & ~rxd_d[1] ) : 1'b0;
   always @ ( posedge rxd_nege or posedge sys_clk or negedge rst_n ) begin
     if ( ~rst_n ) begin
       rx_start    <= 1'b0;

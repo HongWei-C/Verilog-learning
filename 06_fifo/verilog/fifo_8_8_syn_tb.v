@@ -1,5 +1,5 @@
 `timescale  1ns / 100ps
-module fifo_tb_dly ();
+module fifo_8_8_syn_tb ();
   //clk 设置
   reg         clk;
   reg         rst_n;
@@ -8,7 +8,7 @@ module fifo_tb_dly ();
   reg   [7:0] datain;
 
   initial begin
-    $dumpfile("fifo_tb_dly_wave.vcd");
+    $dumpfile("fifo_8_8_syn_tb_wave.vcd");
     $dumpvars;
   end
 
@@ -17,7 +17,7 @@ module fifo_tb_dly ();
     input [31:0]  number;
     begin
         repeat ( number ) @ ( posedge clk );
-        #1;
+        #5;
     end
   endtask
 
@@ -34,7 +34,7 @@ module fifo_tb_dly ();
     rd        = 1'b0;
     datain    = 8'b0;
     //1.全局复位
-    #1  rst_n = 1'b0;
+    delay(1);  rst_n = 1'b0;
     delay(1);
     rst_n     = 1'b1;
     //2.写使能，并输入数据，多写两个
@@ -61,7 +61,7 @@ module fifo_tb_dly ();
   wire        empty_err;
   wire  [7:0] dataout;
 
-  fifo duf (
+  fifo_8_8_syn fifo_duf (
     .wr       ( wr ),
     .rd       ( rd ),
     .rst_n    ( rst_n ),

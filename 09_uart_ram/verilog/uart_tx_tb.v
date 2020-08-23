@@ -34,7 +34,7 @@ module uart_tx_tb ();
     //给一个持续1个周期的ready信号    
     tx_ready    = 1'b1;        
     delay(1*64);
-    tx_ready    = 1'b0;
+    tx_ready    = 1'b1;
     delay(9*64);
     //连续传输数据
     tx_data_i   = 8'b1111_0000;

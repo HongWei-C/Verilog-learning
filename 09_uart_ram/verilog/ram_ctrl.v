@@ -119,17 +119,18 @@ module ram_ctrl (
       endcase
     end
   end
-  
-  reg						tx_ready_r1;        //uart发送信号节拍延迟
-  reg						ram_write_r1;       //ram写信号节拍延迟
+
+  parameter	en_dly = 2;											//用于控制en使能信号相对于数据的延迟(en_dly个sys_clk)
+  reg			[en_dly-1:0]	tx_ready_r1;        //uart发送信号节拍延迟
+	reg			[en_dly-1:0]	ram_write_r1;       //ram写信号节拍延迟
   always @ ( posedge sys_clk or negedge rst_n ) begin
     if ( ~rst_n ) begin
-      tx_ready_r1   <= 1'b0;
-      ram_write_r1  <= 1'b0;
+			tx_ready_r1   <= {en_dly{1'b0}};
+			ram_write_r1  <= {en_dly{1'b0}};
     end
-    else begin											//1个sys_clk的节拍延迟//一个装载时间问题！！
-      tx_ready_r1   <= tx_ready_r;	//使tx_ready相对于tx_data_in延迟出现
-      ram_write_r1  <= ram_write_r;	//使ram_write相对于ram_datain延迟出现
+    else begin											//2个sys_clk的节拍延迟
+			tx_ready_r1   <= { tx_ready_r , tx_ready_r1[en_dly-1:1] };	//使tx_ready相对于tx_data_in延迟出现
+      ram_write_r1  <= { ram_write_r , ram_write_r1[en_dly-1:1] };	//使ram_write相对于ram_datain延迟出现
 		end
   end
 
@@ -138,8 +139,8 @@ module ram_ctrl (
   wire    [7:0] ram_datain;					//ram写数据线(连接ram)
   wire    [7:0] ram_dataout;				//ram读数据线(连接ram)
   //将节拍延迟的发送数据准备信号连上
-  assign  tx_ready    = tx_ready_r1;
-  assign  ram_write   = ram_write_r1;
+  assign  tx_ready    = tx_ready_r1[0];
+  assign  ram_write   = ram_write_r1[0];
   assign  ram_addr    = ram_addr_r;
   assign  ram_datain  = ram_datain_r;
 

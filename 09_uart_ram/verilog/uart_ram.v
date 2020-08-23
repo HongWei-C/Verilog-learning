@@ -14,6 +14,7 @@ module uart_ram (
   wire          rst_n;
   wire          sys_clk;
   wire          bps_clk_up;
+	wire					bps_clk_up_16x;
   wire          rxd;
   wire    [7:0] rx_data_o;
   wire          rx_idle;
@@ -30,18 +31,19 @@ module uart_ram (
 
   //调用uart    
   uart_top top_to_ram (
-    .rst_n      ( rst_n ),
-    .sys_clk    ( sys_clk ),
-    .bps_clk_up ( bps_clk_up ),
-    .rxd        ( rxd ),
-    .rx_data_o  ( rx_data_o ),
-    .rx_idle    ( rx_idle ),
-    .rx_bits_ok ( rx_bits_ok ),
-    .tx_ready   ( tx_ready ),
-    .tx_data_i  ( tx_data_i ),
-    .txd        ( txd ),
-    .tx_idle    ( tx_idle ),
-    .tx_bits_ok ( tx_bits_ok )
+    .rst_n					( rst_n ),
+    .sys_clk				( sys_clk ),
+    .bps_clk_up			( bps_clk_up ),
+		.bps_clk_up_16x	( bps_clk_up_16x ),
+    .rxd						( rxd ),
+    .rx_data_o			( rx_data_o ),
+    .rx_idle				( rx_idle ),
+    .rx_bits_ok			( rx_bits_ok ),
+    .tx_ready				( tx_ready ),
+    .tx_data_i			( tx_data_i ),
+    .txd						( txd ),
+    .tx_idle				( tx_idle ),
+    .tx_bits_ok			( tx_bits_ok )
   );
 
 	//ram控制逻辑，给ram提供写使能，地址，数据，给uart提供tx_ready
@@ -58,11 +60,11 @@ module uart_ram (
 
 	//vivado ram ip核调用
   dmg_ram sram_t (
-    .clk      ( sys_clk ),
-    .we       ( ram_write ),
-    .a        ( ram_addr ),
-    .d        ( ram_datain ),
-    .spo      ( ram_dataout )
+    .clk				( sys_clk ),
+    .we				  ( ram_write ),
+    .a					( ram_addr ),
+    .d					( ram_datain ),
+    .spo				( ram_dataout )
   );
 	//将ram读出的数据连上TXD发送
 	assign  tx_data_i   = ram_dataout;

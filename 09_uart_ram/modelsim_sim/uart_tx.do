@@ -12,8 +12,7 @@ add wave -noupdate -label bps_clk_up -radix binary /uart_tx_tb/bps_clk_up
 add wave -noupdate -label state -radix unsigned /uart_tx_tb/tx_duf/state
 add wave -noupdate -label tx_data_i -radix binary /uart_tx_tb/tx_data_i
 add wave -noupdate -label tx_ready -radix binary /uart_tx_tb/tx_ready
-add wave -noupdate -label tx_st1 -radix binary /uart_tx_tb/tx_duf/tx_st1
-add wave -noupdate -label tx_st2 -radix binary /uart_tx_tb/tx_duf/tx_st2
+add wave -noupdate -label tx_st -radix binary /uart_tx_tb/tx_duf/tx_st
 add wave -noupdate -label txd_pose -radix binary /uart_tx_tb/tx_duf/txd_pose
 add wave -noupdate -label tx_start -radix binary /uart_tx_tb/tx_duf/tx_start
 add wave -noupdate -label txd -radix binary /uart_tx_tb/txd

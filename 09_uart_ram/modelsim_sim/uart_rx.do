@@ -15,7 +15,6 @@ add wave -noupdate -label cnt_16x_f -radix binary /uart_rx_tb/rx_duf/cnt_16x_f
 add wave -noupdate -label rx_state -radix unsigned /uart_rx_tb/rx_duf/state
 add wave -noupdate -label rxd -radix binary /uart_rx_tb/rxd
 add wave -noupdate -label rxd_d -radix binary /uart_rx_tb/rx_duf/rxd_d
-add wave -noupdate -label rxd_d1 -radix binary /uart_rx_tb/rx_duf/rxd_d1
 add wave -noupdate -label rxd_nege -radix binary /uart_rx_tb/rx_duf/rxd_nege
 add wave -noupdate -label rx_start -radix binary /uart_rx_tb/rx_duf/rx_start
 add wave -noupdate -label rx_shift_r -radix binary /uart_rx_tb/rx_duf/rx_shift_r

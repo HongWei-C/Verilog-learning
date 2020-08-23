@@ -24,8 +24,6 @@ module uart_tx (
   wire            rst_n;
   wire            sys_clk;
   wire            tx_ready;
-  reg             tx_st1;
-	reg							tx_st2;
   wire            txd_pose;   //tx_ready上升沿脉冲
   wire            bps_clk_up;
   reg             tx_start;   //发送启动信号，持续到下一个bps_clk上升沿
@@ -43,18 +41,18 @@ module uart_tx (
 
 	//保证每一个tx_ready信号只发送一次数据，相当于检测tx_ready信号上升沿
   //两级延迟，滤除小毛刺
+	parameter					tx_dly	= 1;		//最小为1,控制rx_start延迟产生时间
+	reg		[tx_dly:0]  tx_st;					//tx_dly个sys_clk
 	always @ ( posedge sys_clk or negedge rst_n ) begin
     if ( ~rst_n ) begin
-      tx_st1    <= 1'b0;
-			tx_st2		<= 1'b0;
+      tx_st	    <= { (tx_dly+1) {1'b0}};
     end
     else begin
-      tx_st1    <= tx_ready;
-			tx_st2		<= tx_st1;
+      tx_st	    <= { tx_ready , tx_st[tx_dly:1] };
     end
   end
 	//滤除无效的tx_ready信号上升沿
-  assign  txd_pose  = tx_bits_ok ? ( tx_st1 & ~tx_st2 ) : 1'b0;
+  assign  txd_pose  = tx_bits_ok ? ( tx_st[1] & ~tx_st[0] ) : 1'b0;
   always @ ( posedge txd_pose or posedge sys_clk or negedge rst_n ) begin
     if ( ~rst_n ) begin
       tx_start  <= 1'b0;

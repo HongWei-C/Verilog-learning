@@ -14,7 +14,7 @@ onerror {resume}
 quietly WaveActivateNextPane {} 0
 add wave -noupdate -label rst_n -radix binary /uart_ram_tb/rst_n
 add wave -noupdate -label sys_clk -radix binary /uart_ram_tb/sys_clk
-add wave -noupdate /uart_ram_tb/ram_1/top_to_ram/bps_clk_up_16x
+add wave -noupdate /uart_ram_tb/ram_1/bps_clk_up_16x
 add wave -noupdate -radix unsigned /uart_ram_tb/ram_1/top_to_ram/top_rx/cnt_16x
 add wave -noupdate /uart_ram_tb/ram_1/top_to_ram/top_rx/cnt_16x_f
 add wave -noupdate -label rx_state -radix unsigned /uart_ram_tb/ram_1/top_to_ram/top_rx/state
