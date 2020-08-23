@@ -22,7 +22,7 @@ Z2 w1596377503
 F../vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/simulation/dist_mem_gen_v8_0.v
 L0 78
 Z3 OL;L;10.4;61
-!s108 1597489608.292000
+!s108 1598146588.501000
 !s107 ../vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/simulation/dist_mem_gen_v8_0.v|
 !s90 -reportprogress|300|../vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/simulation/dist_mem_gen_v8_0.v|
 !i113 0
@@ -41,9 +41,28 @@ R2
 F../vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/sim/dmg_ram.v
 L0 56
 R3
-!s108 1597489608.399000
+!s108 1598146588.574000
 !s107 ../vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/sim/dmg_ram.v|
 !s90 -reportprogress|300|../vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/sim/dmg_ram.v|
+!i113 0
+R4
+vram_ctrl
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 @4Rf[g92U]=0ZRm`o:lUR1
+Ie:WV]l`>1fMOn[N<^i]j50
+R1
+w1598144986
+8../verilog/ram_ctrl.v
+F../verilog/ram_ctrl.v
+L0 1
+R3
+!s108 1598146588.324000
+!s107 ../verilog/ram_ctrl.v|
+!s90 -reportprogress|300|../verilog/ram_ctrl.v|
 !i113 0
 R4
 vuart_baud
@@ -52,15 +71,15 @@ r1
 !s85 0
 31
 !i10b 1
-!s100 H<BC<OQkIMQc8eoK9eH>21
-IEM[3H@YOQ9o4eSo?1LnhL1
+!s100 6SdC<m[8AXn?MUL?T1;cz0
+In?7m;c70>99^EF9BHKVnM3
 R1
-w1596354946
+w1598100953
 8../verilog/uart_baud.v
 F../verilog/uart_baud.v
 L0 3
 R3
-!s108 1597489607.742000
+!s108 1598146588.086000
 !s107 ..\verilog\uart_defines.v|../verilog/uart_baud.v|
 !s90 -reportprogress|300|../verilog/uart_baud.v|
 !i113 0
@@ -71,15 +90,15 @@ r1
 !s85 0
 31
 !i10b 1
-!s100 lohNOIf=YM6Q7?m_`1Go42
-IYcaWohzc4MEl84Cz9@fZS3
+!s100 Xl5IfDO0z8@ToPAglZ<QL0
+IEOGi@Qf>CT3=Rd=CI>;SS0
 R1
-w1596377739
+w1598100806
 8../verilog/uart_ram.v
 F../verilog/uart_ram.v
 L0 2
 R3
-!s108 1597489608.114000
+!s108 1598146588.385000
 !s107 ..\verilog\uart_defines.v|../verilog/uart_ram.v|
 !s90 -reportprogress|300|../verilog/uart_ram.v|
 !i113 0
@@ -90,15 +109,15 @@ r1
 !s85 0
 31
 !i10b 1
-!s100 R3;d1MZB^?FYU@hO`F9GC3
-IL;dYRSAX9oSTbC88jo^fd2
+!s100 l2_i:GD5R6IzcCY:B<3jD0
+ID2egBl:6R6<MG9bSm:cJj2
 R1
-w1596376324
+w1598146546
 8../verilog/uart_ram_tb.v
 F../verilog/uart_ram_tb.v
 L0 2
 R3
-!s108 1597489608.202000
+!s108 1598146588.444000
 !s107 ..\verilog\uart_defines.v|../verilog/uart_ram_tb.v|
 !s90 -reportprogress|300|../verilog/uart_ram_tb.v|
 !i113 0
@@ -109,114 +128,111 @@ r1
 !s85 0
 31
 !i10b 1
-!s100 ;bhgo[0lI:60_b^ig3L]^1
-IUH8iTAUEGPl=VE?NzR:]z0
+!s100 HnQ6fgABADTm5o0bbXB:X0
+IN8f01F<c6U<Bk12fhzZG31
 R1
-w1596356699
+w1598145776
 8../verilog/uart_rx.v
 F../verilog/uart_rx.v
 L0 3
 R3
-!s108 1597489607.857000
+!s108 1598146588.143000
 !s107 ..\verilog\uart_defines.v|../verilog/uart_rx.v|
 !s90 -reportprogress|300|../verilog/uart_rx.v|
 !i113 0
 R4
 vuart_rx_tb
-Z5 !s110 1596415641
-!i10b 1
-!s100 4I=zXbk5NZc1[khZJZVmg3
-I>0Te=zTJ369gLIoSob7Y33
 R0
-Z6 dC:/Users/67551/Desktop/uart_ram/modelsim_sim
-w1596355707
-8C:/Users/67551/Desktop/uart_ram/verilog/uart_rx_tb.v
-FC:/Users/67551/Desktop/uart_ram/verilog/uart_rx_tb.v
-L0 3
-R3
 r1
 !s85 0
 31
-!s108 1596415641.016000
-!s107 C:/Users/67551/Desktop/uart_ram/verilog/uart_rx_tb.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/67551/Desktop/uart_ram/verilog/uart_rx_tb.v|
+!i10b 1
+!s100 0ai]1NHRT0F3WN:XDoI6X2
+IWLF@<M]XMXJLzHYJ1oE<J1
+R1
+w1598145817
+8../verilog/uart_rx_tb.v
+F../verilog/uart_rx_tb.v
+L0 3
+R3
+!s108 1598145907.040000
+!s107 ../verilog/uart_rx_tb.v|
+!s90 -reportprogress|300|../verilog/uart_rx_tb.v|
 !i113 0
-Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
 vuart_top
 R0
 r1
 !s85 0
 31
 !i10b 1
-!s100 @]9EI[;1TcZ<K<cdMD]Hi3
-I=bb3:McB;_X=5Z?emDEES1
+!s100 mcBIB1`<kP6Gm>LF4ggF82
+IaeN@:6L[7Zo92K3k3QnMY3
 R1
-w1596369337
+w1598103383
 8../verilog/uart_top.v
 F../verilog/uart_top.v
 L0 2
 R3
-!s108 1597489608.028000
+!s108 1598146588.265000
 !s107 ..\verilog\uart_defines.v|../verilog/uart_top.v|
 !s90 -reportprogress|300|../verilog/uart_top.v|
 !i113 0
 R4
 vuart_top_tb
-R5
-!i10b 1
-!s100 e[P3T:UQ7g67]Vn3PPIh<2
-I<Dodi0mz<d44BMo[V<a>73
 R0
-R6
-w1596370185
-8C:/Users/67551/Desktop/uart_ram/verilog/uart_top_tb.v
-FC:/Users/67551/Desktop/uart_ram/verilog/uart_top_tb.v
-L0 2
-R3
 r1
 !s85 0
 31
-!s108 1596415641.568000
-!s107 C:\Users\67551\Desktop\uart_ram\verilog\uart_defines.v|C:/Users/67551/Desktop/uart_ram/verilog/uart_top_tb.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/67551/Desktop/uart_ram/verilog/uart_top_tb.v|
+!i10b 1
+!s100 ^nX;>@3UhmiORk0PQ8zM50
+I_j`YBE33jVDT[VZDKo96o2
+R1
+w1598146199
+8../verilog/uart_top_tb.v
+F../verilog/uart_top_tb.v
+L0 2
+R3
+!s108 1598146370.660000
+!s107 ..\verilog\uart_defines.v|../verilog/uart_top_tb.v|
+!s90 -reportprogress|300|../verilog/uart_top_tb.v|
 !i113 0
-R7
+R4
 vuart_tx
 R0
 r1
 !s85 0
 31
 !i10b 1
-!s100 GIcTX?5KZ6RF[;i[bf3;=3
-IS:3AH10RjYQ3o4HHU6aHN2
+!s100 lTXSJf0Y0YcFcmlz:d48Y0
+I=Q46cfFimBz_[_3JM4?Wh2
 R1
-w1596367900
+w1598145804
 8../verilog/uart_tx.v
 F../verilog/uart_tx.v
 L0 3
 R3
-!s108 1597489607.943000
+!s108 1598146588.202000
 !s107 ..\verilog\uart_defines.v|../verilog/uart_tx.v|
 !s90 -reportprogress|300|../verilog/uart_tx.v|
 !i113 0
 R4
 vuart_tx_tb
-R5
-!i10b 1
-!s100 fQQ28hD@^`Xf3V:V@9Zn60
-IcoNRc4lY<kEJi^96R`O663
 R0
-R6
-w1596368331
-8C:/Users/67551/Desktop/uart_ram/verilog/uart_tx_tb.v
-FC:/Users/67551/Desktop/uart_ram/verilog/uart_tx_tb.v
-L0 2
-R3
 r1
 !s85 0
 31
-!s108 1596415641.330000
-!s107 C:\Users\67551\Desktop\uart_ram\verilog\uart_defines.v|C:/Users/67551/Desktop/uart_ram/verilog/uart_tx_tb.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/67551/Desktop/uart_ram/verilog/uart_tx_tb.v|
+!i10b 1
+!s100 9I4^nCS?Hk<N=oCeK@a>z3
+Ie2L`5g[FZ^:0Uc2Lm;KAh3
+R1
+w1598145419
+8../verilog/uart_tx_tb.v
+F../verilog/uart_tx_tb.v
+L0 2
+R3
+!s108 1598145675.288000
+!s107 ..\verilog\uart_defines.v|../verilog/uart_tx_tb.v|
+!s90 -reportprogress|300|../verilog/uart_tx_tb.v|
 !i113 0
-R7
+R4

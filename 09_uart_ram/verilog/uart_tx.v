@@ -10,23 +10,10 @@ module uart_tx (
   tx_idle,
   tx_bits_ok
 );
-  parameter NULL  = 4'd0,   // 复位状态NULL
-            IDLE  = 4'd1,   // 空闲位，等待接收起始位,复位后信号
-            START = 4'd2,   // 起始位，接收到0，准备接收有效数据
-            BIT0  = 4'd3,   // 发送第0位数据的状态
-            BIT1  = 4'd4,
-            BIT2  = 4'd5,
-            BIT3  = 4'd6,
-            BIT4  = 4'd7,
-            BIT5  = 4'd8,
-            BIT6  = 4'd9,
-            BIT7  = 4'd10,   // 发送第7位数据的状态
-//            PAR   = 4'd11,  // 奇偶校验位
-            STOP  = 4'd12;    // 接收完毕，停止位
   
   input           rst_n;      //全局复位
   input           sys_clk;    //100MHz系统时钟
-  input           bps_clk_up; //经过比特率分频后时钟的上升沿标志
+  output          bps_clk_up; //经过比特率分频后时钟的上升沿标志
   input           tx_ready;   //表示待发送的数据已经准备好了
   input     [7:0] tx_data_i;  //未传送到寄存器的待发送数据
   output          txd;        //uart的TXD端
@@ -38,18 +25,36 @@ module uart_tx (
   wire            sys_clk;
   wire            tx_ready;
   reg             tx_st1;
+	reg							tx_st2;
   wire            txd_pose;   //tx_ready上升沿脉冲
   wire            bps_clk_up;
   reg             tx_start;   //发送启动信号，持续到下一个bps_clk上升沿
-  always @ ( posedge sys_clk or negedge rst_n ) begin
+	
+	//波特率1x倍频
+	uart_baud	#(
+		.fre_mul		(1)
+	)
+	baud_tx
+	( 
+		.sys_clk		(sys_clk),          
+		.rst_n			(rst_n),            
+		.bps_clk_up	(bps_clk_up)             
+	);
+
+	//保证每一个tx_ready信号只发送一次数据，相当于检测tx_ready信号上升沿
+  //两级延迟，滤除小毛刺
+	always @ ( posedge sys_clk or negedge rst_n ) begin
     if ( ~rst_n ) begin
       tx_st1    <= 1'b0;
+			tx_st2		<= 1'b0;
     end
     else begin
       tx_st1    <= tx_ready;
+			tx_st2		<= tx_st1;
     end
   end
-  assign  txd_pose  = tx_bits_ok ? ( tx_ready & ~tx_st1 ) : 1'b0;
+	//滤除无效的tx_ready信号上升沿
+  assign  txd_pose  = tx_bits_ok ? ( tx_st1 & ~tx_st2 ) : 1'b0;
   always @ ( posedge txd_pose or posedge sys_clk or negedge rst_n ) begin
     if ( ~rst_n ) begin
       tx_start  <= 1'b0;
@@ -58,10 +63,10 @@ module uart_tx (
       tx_start  <= 1'b1;      //tx_ready上升沿
     end
     else if ( bps_clk_up ) begin
-      tx_start  <= 1'b0;      //直到下一个bps_clk_up上升沿
-    end
-    else begin
-      tx_start  <= tx_start;
+      tx_start  <= 1'b0;      //直到下一个bps_clk_up下升沿
+    end												//bps_clk_up由sys_clk产生，持续一个sys_clk周期
+    else begin								//故，第一个sys_clk_up对应bps_clk上升沿前，
+      tx_start  <= tx_start;	//第二个sys_clk_up对应bps_clk下降沿前
     end
   end
   
@@ -70,9 +75,22 @@ module uart_tx (
   reg     [7:0] tx_data_r;    //寄存器中暂存的    待发送数据
                               //防止抖动导致数据发送变化
   reg           txd;
-  reg     [3:0] state;
-  reg           tx_idle;
-  reg           tx_bits_ok;
+  reg     [3:0] state;				//状态
+  reg           tx_idle;			//当前处于idle状态	
+  reg           tx_bits_ok;		//当前处于stop/idle状态
+	parameter NULL  = 4'd0,			// 复位状态NULL
+            IDLE  = 4'd1,			// 空闲位，等待接收起始位,复位后信号
+            START = 4'd2,			// 起始位，接收到0，准备接收有效数据
+            BIT0  = 4'd3,			// 发送第0位数据的状态
+            BIT1  = 4'd4,
+            BIT2  = 4'd5,
+            BIT3  = 4'd6,
+            BIT4  = 4'd7,
+            BIT5  = 4'd8,
+            BIT6  = 4'd9,
+            BIT7  = 4'd10,		// 发送第7位数据的状态
+//            PAR   = 4'd11,  // 奇偶校验位
+            STOP  = 4'd12;    // 接收完毕，停止位
   always @ ( posedge sys_clk or negedge rst_n ) begin
     if ( ~rst_n ) begin
       state       <= NULL;

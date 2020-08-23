@@ -1,0 +1,238 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/67551/Desktop/09_uart_ram
+vdist_mem_gen_v8_0_13
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 R<1R?m:RY^H;FWU@n][C12
+I<8^VN2P>zgA1VK0OOmeB?0
+Z1 dD:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/modelsim_sim
+Z2 w1596377503
+8../vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/simulation/dist_mem_gen_v8_0.v
+F../vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/simulation/dist_mem_gen_v8_0.v
+L0 78
+Z3 OL;L;10.4;61
+!s108 1598106743.924000
+!s107 ../vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/simulation/dist_mem_gen_v8_0.v|
+!s90 -reportprogress|300|../vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/simulation/dist_mem_gen_v8_0.v|
+!i113 0
+Z4 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vdmg_ram
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 TmLR_?CSn^QPW?S>=402P0
+I64@IS?3^8KD02_H=>mfk:0
+R1
+R2
+8../vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/sim/dmg_ram.v
+F../vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/sim/dmg_ram.v
+L0 56
+R3
+!s108 1598106744.006000
+!s107 ../vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/sim/dmg_ram.v|
+!s90 -reportprogress|300|../vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/sim/dmg_ram.v|
+!i113 0
+R4
+vram_ctrl
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 @4Rf[g92U]=0ZRm`o:lUR1
+Ie:WV]l`>1fMOn[N<^i]j50
+R1
+w1598106738
+8../verilog/ram_ctrl.v
+F../verilog/ram_ctrl.v
+L0 1
+R3
+!s108 1598106743.751000
+!s107 ../verilog/ram_ctrl.v|
+!s90 -reportprogress|300|../verilog/ram_ctrl.v|
+!i113 0
+R4
+vuart_baud
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 >VIEPg??9HFCPdH28b<7Y0
+IkciVjM8hCPU=1f2Z>1z=<0
+Z5 dD:/STUDY/GitHubWork/Verilog-learning/08_uart/modelsim_sim
+w1598100953
+8../verilog/uart_baud.v
+F../verilog/uart_baud.v
+L0 3
+R3
+!s108 1598107518.691000
+!s107 ..\verilog\uart_defines.v|../verilog/uart_baud.v|
+!s90 -reportprogress|300|../verilog/uart_baud.v|
+!i113 0
+R4
+vuart_ram
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 Xl5IfDO0z8@ToPAglZ<QL0
+IEOGi@Qf>CT3=Rd=CI>;SS0
+R1
+w1598100806
+8../verilog/uart_ram.v
+F../verilog/uart_ram.v
+L0 2
+R3
+!s108 1598106743.805000
+!s107 ..\verilog\uart_defines.v|../verilog/uart_ram.v|
+!s90 -reportprogress|300|../verilog/uart_ram.v|
+!i113 0
+R4
+vuart_ram_tb
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 OJXkY`FmfcB`2kLb]J9=:2
+I<<m6b4AFjjB3Qh;;h5bgk2
+R1
+w1598099987
+8../verilog/uart_ram_tb.v
+F../verilog/uart_ram_tb.v
+L0 2
+R3
+!s108 1598106743.865000
+!s107 ..\verilog\uart_defines.v|../verilog/uart_ram_tb.v|
+!s90 -reportprogress|300|../verilog/uart_ram_tb.v|
+!i113 0
+R4
+vuart_rx
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 OS_P]ZN^Hag;`ad>8`7WC2
+IZ4i5A=Zmb2h:c2X7?oFeT2
+R5
+w1598103082
+8../verilog/uart_rx.v
+F../verilog/uart_rx.v
+L0 3
+R3
+!s108 1598107518.742000
+!s107 ..\verilog\uart_defines.v|../verilog/uart_rx.v|
+!s90 -reportprogress|300|../verilog/uart_rx.v|
+!i113 0
+R4
+vuart_rx_tb
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 2m<o;0:AGPcB4oc_5><Zh1
+Idj33^o5CmVciMR;83m[WW2
+R1
+w1598087537
+8../verilog/uart_rx_tb.v
+F../verilog/uart_rx_tb.v
+L0 3
+R3
+!s108 1598088619.466000
+!s107 ../verilog/uart_rx_tb.v|
+!s90 -reportprogress|300|../verilog/uart_rx_tb.v|
+!i113 0
+R4
+vuart_top
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 mcBIB1`<kP6Gm>LF4ggF82
+IaeN@:6L[7Zo92K3k3QnMY3
+R5
+w1598103383
+8../verilog/uart_top.v
+F../verilog/uart_top.v
+L0 2
+R3
+!s108 1598107518.851000
+!s107 ..\verilog\uart_defines.v|../verilog/uart_top.v|
+!s90 -reportprogress|300|../verilog/uart_top.v|
+!i113 0
+R4
+vuart_top_tb
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 B;MCjDDQm48`N]eE9F0?Y3
+I=XYz_Y04H@S>T==`a:Hm?3
+R5
+w1598089174
+8../verilog/uart_top_tb.v
+F../verilog/uart_top_tb.v
+L0 2
+R3
+!s108 1598107518.908000
+!s107 ..\verilog\uart_defines.v|../verilog/uart_top_tb.v|
+!s90 -reportprogress|300|../verilog/uart_top_tb.v|
+!i113 0
+R4
+vuart_tx
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 KWUnkh5REJ9FJaHzn<=o?1
+I1_Jc_6UOkdo:N[:SQ3d1e2
+R5
+w1598103028
+8../verilog/uart_tx.v
+F../verilog/uart_tx.v
+L0 3
+R3
+!s108 1598107518.797000
+!s107 ..\verilog\uart_defines.v|../verilog/uart_tx.v|
+!s90 -reportprogress|300|../verilog/uart_tx.v|
+!i113 0
+R4
+vuart_tx_tb
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 7NmEA]Rlc`KDY1k@DXI1K3
+IEhfzRQc?b0d6l5d53h;KM0
+R1
+w1598104128
+8../verilog/uart_tx_tb.v
+F../verilog/uart_tx_tb.v
+L0 2
+R3
+!s108 1598105486.010000
+!s107 ..\verilog\uart_defines.v|../verilog/uart_tx_tb.v|
+!s90 -reportprogress|300|../verilog/uart_tx_tb.v|
+!i113 0
+R4

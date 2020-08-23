@@ -7,8 +7,8 @@
 //`define FAST_SIM  
 
 `ifdef  FAST_SIM
-  `define BAUDRATE  12500000  //仿真时用
-`else 
+  `define BAUDRATE  1562500  //仿真时用
+`else								
   `define BAUDRATE  115200    //定义了uart的波特率为115200
   //`define BAUDRATE  9600      //定义了uart的波特率为9600
 `endif

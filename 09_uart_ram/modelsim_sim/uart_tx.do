@@ -13,6 +13,7 @@ add wave -noupdate -label state -radix unsigned /uart_tx_tb/tx_duf/state
 add wave -noupdate -label tx_data_i -radix binary /uart_tx_tb/tx_data_i
 add wave -noupdate -label tx_ready -radix binary /uart_tx_tb/tx_ready
 add wave -noupdate -label tx_st1 -radix binary /uart_tx_tb/tx_duf/tx_st1
+add wave -noupdate -label tx_st2 -radix binary /uart_tx_tb/tx_duf/tx_st2
 add wave -noupdate -label txd_pose -radix binary /uart_tx_tb/tx_duf/txd_pose
 add wave -noupdate -label tx_start -radix binary /uart_tx_tb/tx_duf/tx_start
 add wave -noupdate -label txd -radix binary /uart_tx_tb/txd
@@ -35,7 +36,7 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {0 ps} {900 ps}
+WaveRestoreZoom {0 ps} {20500000 ps}
 
 run -all
 view wave

@@ -9,10 +9,13 @@ onerror {resume}
 quietly WaveActivateNextPane {} 0
 add wave -noupdate -label rst_n -radix binary /uart_rx_tb/rst_n
 add wave -noupdate -label sys_clk -radix binary /uart_rx_tb/sys_clk
-add wave -noupdate -label bps_clk_up -radix binary /uart_rx_tb/bps_clk_up
+add wave -noupdate -label bps_clk_up_16x -radix binary /uart_rx_tb/bps_clk_up_16x
+add wave -noupdate -label cnt_16x_f -radix unsigned /uart_rx_tb/rx_duf/cnt_16x
+add wave -noupdate -label cnt_16x_f -radix binary /uart_rx_tb/rx_duf/cnt_16x_f
 add wave -noupdate -label rx_state -radix unsigned /uart_rx_tb/rx_duf/state
 add wave -noupdate -label rxd -radix binary /uart_rx_tb/rxd
 add wave -noupdate -label rxd_d -radix binary /uart_rx_tb/rx_duf/rxd_d
+add wave -noupdate -label rxd_d1 -radix binary /uart_rx_tb/rx_duf/rxd_d1
 add wave -noupdate -label rxd_nege -radix binary /uart_rx_tb/rx_duf/rxd_nege
 add wave -noupdate -label rx_start -radix binary /uart_rx_tb/rx_duf/rx_start
 add wave -noupdate -label rx_shift_r -radix binary /uart_rx_tb/rx_duf/rx_shift_r
@@ -36,7 +39,7 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {1638400 ps} {4915200 ps}
+WaveRestoreZoom {0 ps} {24000000 ps}
 
 run -all
 view wave

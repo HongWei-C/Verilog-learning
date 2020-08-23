@@ -27,109 +27,109 @@ module uart_top_tb ();
     //复位
     delay(1*4);
     rst_n       = 1'b0;
-    delay(1*8);
+    delay(1*64);
     rst_n       = 1'b1;
     delay(1*5);
     //2个空闲位后,出现起始位,持续1周期
-    delay(2*8);
+    delay(2*64);
     delay(4);
     rxd         = 1'b0;
-    delay(1*8);
+    delay(1*64);
     //传输1111_0000
     rxd         = 1'b0;
-    delay(1*8);
+    delay(1*64);
     rxd         = 1'b0;
-    delay(1*8);
+    delay(1*64);
     rxd         = 1'b0;
-    delay(1*8);
+    delay(1*64);
     rxd         = 1'b0;
-    delay(1*8);
+    delay(1*64);
     rxd         = 1'b1;
-    delay(1*8);
+    delay(1*64);
     rxd         = 1'b1;
-    delay(1*8);
+    delay(1*64);
     rxd         = 1'b1;
-    delay(1*8);
+    delay(1*64);
     rxd         = 1'b1;
-    delay(1*8);
+    delay(1*64);
     //传输停止位
     rxd         = 1'b1;
-    delay(1*8);
+    delay(1*64);
   //测试连续传输，STOP后出现起始位
     rxd         = 1'b0;
-    delay(1*8);
+    delay(1*64);
     //传输1011_1000
     rxd         = 1'b0;
-    delay(1*8);
+    delay(1*64);
     rxd         = 1'b0;
-    delay(1*8);
+    delay(1*64);
     rxd         = 1'b0;
-    delay(1*8);
+    delay(1*64);
     rxd         = 1'b1;
-    delay(1*8);
+    delay(1*64);
     rxd         = 1'b1;
-    delay(1*8);
+    delay(1*64);
     rxd         = 1'b1;
-    delay(1*8);
+    delay(1*64);
     rxd         = 1'b0;
-    delay(1*8);
+    delay(1*64);
     rxd         = 1'b1;
-    delay(1*8);
+    delay(1*64);
     //传输停止位
     rxd         = 1'b1;
-    delay(1*8);
+    delay(1*64);
   //测试连续传输，STOP后直接传输START
     rxd         = 1'b0;
-    delay(1*8);
+    delay(1*64);
     //传输0001_0010
     rxd         = 1'b0;
-    delay(1*8);
+    delay(1*64);
     rxd         = 1'b1;
-    delay(1*8);
+    delay(1*64);
     rxd         = 1'b0;
-    delay(1*8);
+    delay(1*64);
     rxd         = 1'b0;
-    delay(1*8);
+    delay(1*64);
     rxd         = 1'b1;
-    delay(1*8);
+    delay(1*64);
     rxd         = 1'b0;
-    delay(1*8);
+    delay(1*64);
     rxd         = 1'b0;
-    delay(1*8);
+    delay(1*64);
     rxd         = 1'b0;
-    delay(1*8);
+    delay(1*64);
     //传输停止位
     rxd         = 1'b1;
-    delay(1*8);
+    delay(1*64);
     //传输3个空闲位
     rxd         = 1'b1;
-    delay(3*8);
+    delay(3*64);
     //传输起始位
     rxd         = 1'b0;
-    delay(1*8);
+    delay(1*64);
     //传输0011_1101
     rxd         = 1'b1;
-    delay(1*8);
+    delay(1*64);
     rxd         = 1'b0;
-    delay(1*8);
+    delay(1*64);
     rxd         = 1'b1;
-    delay(1*8);
+    delay(1*64);
     rxd         = 1'b1;
-    delay(1*8);
+    delay(1*64);
     rxd         = 1'b1;
-    delay(1*8);
+    delay(1*64);
     rxd         = 1'b1;
-    delay(1*8);
+    delay(1*64);
     rxd         = 1'b0;
-    delay(1*8);
+    delay(1*64);
     rxd         = 1'b0;
-    delay(1*8);
+    delay(1*64);
     //传输停止位
     rxd         = 1'b1;
-    delay(1*8);
+    delay(1*64);
     //传输3个空闲位
     rxd         = 1'b1;
-    delay(3*8);
+    delay(3*64);
     $finish;
   end
 
@@ -139,36 +139,37 @@ module uart_top_tb ();
     delay(1*17);
     //传输数据，先保持一段时间空闲位
     tx_data_i   = 8'b0110_1110; //第一次要传输的数据
-    delay(2*8);
+    delay(2*64);
     //给一个持续1个周期的ready信号    
     tx_ready    = 1'b1;        
-    delay(1*8);
+    delay(1*64);
     tx_ready    = 1'b0;
-    delay(9*8);
+    delay(9*64);
     //连续传输数据
     tx_data_i   = 8'b1111_0000;
     tx_ready    = 1'b1;
-    delay(1*8);
+    delay(1*64);
     tx_ready    = 1'b0;
-    delay(9*8);
+    delay(9*64);
     //连续传输数据
     tx_data_i   = 8'b0000_1111;
     tx_ready    = 1'b1;
-    delay(1*8);
+    delay(1*64);
     tx_ready    = 1'b0;
-    delay(9*8);
+    delay(9*64);
     //3个空闲位
-    delay(3*8);
+    delay(3*64);
     //传输数据
     tx_data_i   = 8'b1010_0101;
     tx_ready    = 1'b1;
-    delay(1*8);
+    delay(1*64);
     tx_ready    = 1'b0;
-    delay(13*8);
+    delay(13*64);
     
   end
 
   wire          bps_clk_up;
+	wire					bps_clk_up_16x;
   wire    [7:0] rx_data_o;
   wire          rx_idle;
   wire          rx_bits_ok;
@@ -177,18 +178,19 @@ module uart_top_tb ();
   wire          tx_bits_ok;
 
   uart_top top_duf (
-    .rst_n      ( rst_n ),
-    .sys_clk    ( sys_clk ),
-    .bps_clk_up ( bps_clk_up ),
-    .rxd        ( rxd ),
-    .rx_data_o  ( rx_data_o ),
-    .rx_idle    ( rx_idle ),
-    .rx_bits_ok ( rx_bits_ok ),
-    .tx_ready   ( tx_ready ),
-    .tx_data_i  ( tx_data_i ),
-    .txd        ( txd ),
-    .tx_idle    ( tx_idle ),
-    .tx_bits_ok ( tx_bits_ok )
+    .rst_n					( rst_n ),
+    .sys_clk				( sys_clk ),
+    .bps_clk_up			( bps_clk_up ),
+		.bps_clk_up_16x	( bps_clk_up_16x),
+    .rxd						( rxd ),
+    .rx_data_o			( rx_data_o ),
+    .rx_idle				( rx_idle ),
+    .rx_bits_ok			( rx_bits_ok ),
+    .tx_ready				( tx_ready ),
+    .tx_data_i			( tx_data_i ),
+    .txd						( txd ),
+    .tx_idle				( tx_idle ),
+    .tx_bits_ok			( tx_bits_ok )
 );
 
 

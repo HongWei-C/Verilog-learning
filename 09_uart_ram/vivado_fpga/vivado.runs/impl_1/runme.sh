@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/67551/Desktop/uart_ram/vivado_fpga/vivado.runs/impl_1'
+HD_PWD='D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga/vivado.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
+/bin/touch .init_design.begin.rst
 EAStep vivado -log uart_ram.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source uart_ram.tcl -notrace
 
 

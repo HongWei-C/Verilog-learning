@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/67551/Desktop/uart_ram/vivado_fpga/vivado.runs/synth_1'
+HD_PWD='D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga/vivado.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

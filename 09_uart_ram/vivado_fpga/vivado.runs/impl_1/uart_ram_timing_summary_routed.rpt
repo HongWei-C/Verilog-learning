@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Mon Aug  3 08:55:35 2020
+| Date         : Sun Aug 23 09:41:54 2020
 | Host         : LAPTOP-E1JQUC07 running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file uart_ram_timing_summary_routed.rpt -pb uart_ram_timing_summary_routed.pb -rpx uart_ram_timing_summary_routed.rpx -warn_on_violation
 | Design       : uart_ram
@@ -53,11 +53,11 @@ Table of Contents
 
 1. checking no_clock
 --------------------
- There is 1 register/latch pin with no clock driven by root clock pin: rxd (HIGH)
-
- There are 84 register/latch pins with no clock driven by root clock pin: sys_clk (HIGH)
+ There are 103 register/latch pins with no clock driven by root clock pin: sys_clk (HIGH)
 
  There are 32 register/latch pins with no clock driven by root clock pin: top_to_ram/top_rx/rx_bits_ok_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: top_to_ram/top_rx/rxd_d1_reg/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: top_to_ram/top_rx/rxd_d_reg/Q (HIGH)
 
@@ -65,7 +65,7 @@ Table of Contents
 
  There is 1 register/latch pin with no clock driven by root clock pin: top_to_ram/top_tx/tx_st1_reg/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: tx_ready_r1_reg/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: top_to_ram/top_tx/tx_st2_reg/Q (HIGH)
 
 
 2. checking constant_clock
@@ -80,7 +80,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 538 pins that are not constrained for maximum delay. (HIGH)
+ There are 580 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 

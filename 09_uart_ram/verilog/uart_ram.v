@@ -23,6 +23,11 @@ module uart_ram (
   wire          txd;
   wire          tx_idle;
   wire          tx_bits_ok;
+	wire					ram_write;
+	wire		[7:0]	ram_addr;
+	wire		[7:0]	ram_datain;
+	wire		[7:0]	ram_dataout;
+
   //调用uart    
   uart_top top_to_ram (
     .rst_n      ( rst_n ),
@@ -39,140 +44,19 @@ module uart_ram (
     .tx_bits_ok ( tx_bits_ok )
   );
 
+	//ram控制逻辑，给ram提供写使能，地址，数据，给uart提供tx_ready
+	ram_ctrl ctrl_for_ram (
+		.sys_clk		( sys_clk ),
+		.rst_n			( rst_n ),
+		.rx_bits_ok	( rx_bits_ok ),
+		.rx_data_o	( rx_data_o ),
+		.tx_ready		( tx_ready ),
+		.ram_write	( ram_write ),
+		.ram_addr		( ram_addr ),
+		.ram_datain (	ram_datain )
+	);
 
-  //通过uart读写ram，可连续向uart发送数据
-  reg   [2:0] state;        //状态机
-  reg   [7:0] ram_command;  //从uart送过来的命令
-  reg   [7:0] ram_addr_r;   //ram地址，地址存在时，会一直从dataout读出数据
-  reg   [7:0] ram_datain_r; //待写入ram的数据
-  reg         ram_write_r;  //ram写使能
-  reg         tx_ready_r;   //uart发出数据准备信号
-  parameter   NULL    = 3'd0,
-              COMD    = 3'd1,
-              R_ADDR  = 3'd2,
-              W_ADDR  = 3'd3,
-              W_DATA  = 3'D4;
-  always @ ( posedge rx_bits_ok or negedge rst_n ) begin
-    //异步复位，进入STOP / IDLE阶段时触发
-    if ( ~rst_n ) begin
-      state         <= NULL;  //复位后处于NULL
-      ram_command   <= 8'h00; //清空命令
-      ram_addr_r    <= 8'h00; //清空地址
-      ram_datain_r  <= 8'h00; //清空数据
-      ram_write_r   <= 1'b0;  //不读
-      tx_ready_r    <= 1'b0;  //不准备向TXD发数据
-    end
-    //状态变化
-    else begin
-      case ( state )
-        NULL: begin   //复位后，rx_state进入IDLE，使state必然进入COMD
-                      //但是接收了一个无效指令，将再次接收指令
-          state         <= COMD;      //NULL -> COMD
-          ram_command   <= rx_data_o; //读取RXD上来的命令
-          ram_addr_r    <= 8'h00; 
-          ram_datain_r  <= 8'h00; 
-          ram_write_r   <= 1'b0;  
-          tx_ready_r    <= 1'b0;  
-        end
-        //指令
-        COMD: begin
-          //指令为"写"，进入W_ADDR状态
-          if ( ram_command == 8'b1111_0000 ) begin
-            state         <= W_ADDR;      //COMD -> W_ADDR
-            ram_command   <= ram_command; //保持指令
-            ram_addr_r    <= rx_data_o;   //读取RXD上来的地址       
-            ram_datain_r  <= 8'h00;     
-            ram_write_r   <= 1'b0;  
-            tx_ready_r    <= 1'b0; 
-          end
-          //指令为"读"，进入R_ADDR状态
-          else if ( ram_command == 8'b0000_1111 ) begin
-            state         <= R_ADDR;      //COMD -> W_ADDR
-            ram_command   <= ram_command; //保持指令
-            ram_addr_r    <= rx_data_o;   //读取RXD上来的地址       
-            ram_datain_r  <= 8'h00;     
-            ram_write_r   <= 1'b0;  
-            tx_ready_r    <= 1'b1; 
-          end
-          //错误指令，继续等待指令
-          else begin
-            state         <= COMD;      //COMD -> COMD
-            ram_command   <= rx_data_o; //读取RXD上来的命令
-            ram_addr_r    <= 8'h00; 
-            ram_datain_r  <= 8'h00; 
-            ram_write_r   <= 1'b0;  
-            tx_ready_r    <= 1'b0; 
-          end
-        end
-        //读，地址
-        R_ADDR: begin
-          state         <= COMD;      //R_ADDR -> COMD
-          ram_command   <= rx_data_o; //读取RXD上来的命令
-          ram_addr_r    <= 8'h00; 
-          ram_datain_r  <= 8'h00; 
-          ram_write_r   <= 1'b0;  
-          tx_ready_r    <= 1'b0; 
-        end
-        //写，地址
-        W_ADDR: begin
-          state         <= W_DATA;      //R_ADDR -> W_DATA
-          ram_command   <= ram_command; 
-          ram_addr_r    <= ram_addr_r;  
-          ram_datain_r  <= rx_data_o;   //读取RXD上来的数据
-          ram_write_r   <= 1'b1;        //ram写使能拉高
-          tx_ready_r    <= 1'b0; 
-        end
-        //写，数据
-        W_DATA: begin
-          state         <= COMD;      //R_ADDR -> COMD
-          ram_command   <= rx_data_o; //读取RXD上来的命令
-          ram_addr_r    <= 8'h00; 
-          ram_datain_r  <= 8'h00; 
-          ram_write_r   <= 1'b0;  
-          tx_ready_r    <= 1'b0; 
-        end
-        //错误状态，重启到NULL等待下一个指令
-        default: begin
-          state         <= NULL;      
-          ram_command   <= 8'h00;     //读取RXD上来的命令
-          ram_addr_r    <= 8'h00; 
-          ram_datain_r  <= 8'h00; 
-          ram_write_r   <= 1'b0;  
-          tx_ready_r    <= 1'b0;
-        end
-      endcase
-    end
-  end
-  
-  reg         tx_ready_r1;        //uart发送信号节拍延迟
-  reg         ram_write_r1;       //ram写信号节拍延迟
-  always @ ( posedge sys_clk or negedge rst_n ) begin
-    if ( ~rst_n ) begin
-      tx_ready_r1   <= 1'b0;
-      ram_write_r1  <= 1'b0;
-    end
-    else if ( bps_clk_up ) begin  //一个bps_clk的节拍延迟
-      tx_ready_r1   <= tx_ready_r;
-      ram_write_r1  <= ram_write_r;
-    end
-    else begin
-      tx_ready_r1   <= tx_ready_r1;
-      ram_write_r1  <= ram_write_r1;
-    end
-  end
-
-  wire          ram_write;      //写数据使能(连接ram)
-  wire    [7:0] ram_addr;       //ram地址线(连接ram)
-  wire    [7:0] ram_datain;     //ram写数据线(连接ram)
-  wire    [7:0] ram_dataout;    //ram读数据线(连接ram)
-  //将节拍延迟的发送数据准备信号连上
-  assign  tx_ready    = tx_ready_r1;
-  assign  ram_write   = ram_write_r1;
-  assign  ram_addr    = ram_addr_r;
-  assign  ram_datain  = ram_datain_r;
-  //将ram读出的数据连上TXD发送
-  assign  tx_data_i   = ram_dataout;
-
+	//vivado ram ip核调用
   dmg_ram sram_t (
     .clk      ( sys_clk ),
     .we       ( ram_write ),
@@ -180,6 +64,6 @@ module uart_ram (
     .d        ( ram_datain ),
     .spo      ( ram_dataout )
   );
-
-  
+	//将ram读出的数据连上TXD发送
+	assign  tx_data_i   = ram_dataout;
 endmodule

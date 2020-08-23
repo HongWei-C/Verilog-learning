@@ -2,7 +2,6 @@
 module uart_tx_tb ();
   reg         sys_clk;
   reg         rst_n;
-  reg         bps_clk_up;
   reg         tx_ready;
   reg   [7:0] tx_data_i;
 
@@ -19,17 +18,6 @@ module uart_tx_tb ();
   end
   always  #10 sys_clk = ~sys_clk;
 
-  //bps_clk_up初始化
-  initial begin
-    bps_clk_up  = 1'b0;
-  end
-  always begin
-    delay(7);
-    bps_clk_up  = 1'b1;
-    delay(1);
-    bps_clk_up  = 1'b0;
-  end
-
   //test_bench设置
   initial begin
     //全局复位
@@ -42,32 +30,32 @@ module uart_tx_tb ();
     rst_n       = 1'b1;
     //传输数据，先保持一段时间空闲位
     tx_data_i   = 8'b0110_1110; //第一次要传输的数据
-    delay(2*8);
+    delay(2*64);
     //给一个持续1个周期的ready信号    
     tx_ready    = 1'b1;        
-    delay(1*8);
+    delay(1*64);
     tx_ready    = 1'b0;
-    delay(9*8);
+    delay(9*64);
     //连续传输数据
     tx_data_i   = 8'b1111_0000;
     tx_ready    = 1'b1;
-    delay(1*8);
+    delay(1*64);
     tx_ready    = 1'b0;
-    delay(9*8);
+    delay(9*64);
     //连续传输数据
     tx_data_i   = 8'b0000_1111;
     tx_ready    = 1'b1;
-    delay(1*8);
+    delay(1*64);
     tx_ready    = 1'b0;
-    delay(9*8);
+    delay(9*64);
     //3个空闲位
-    delay(3*8);
+    delay(3*64);
     //传输数据
     tx_data_i   = 8'b1010_0101;
     tx_ready    = 1'b1;
-    delay(1*8);
+    delay(1*64);
     tx_ready    = 1'b0;
-    delay(13*8);
+    delay(13*64);
     $finish;
   end
 
@@ -75,6 +63,7 @@ module uart_tx_tb ();
   wire          txd;
   wire          tx_idle;
   wire          tx_bits_ok;  
+  wire					bps_clk_up;
 
   uart_tx tx_duf (
     .rst_n      ( rst_n ),

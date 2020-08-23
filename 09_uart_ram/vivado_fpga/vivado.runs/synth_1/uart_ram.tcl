@@ -17,30 +17,30 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param simulator.modelsimInstallPath D:/STUDY/Modelsim/win64
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/67551/Desktop/uart_ram/vivado_fpga/vivado.cache/wt [current_project]
-set_property parent.project_path C:/Users/67551/Desktop/uart_ram/vivado_fpga/vivado.xpr [current_project]
+set_property webtalk.parent_dir D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga/vivado.cache/wt [current_project]
+set_property parent.project_path D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga/vivado.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/67551/Desktop/uart_ram/vivado_fpga/vivado.cache/ip [current_project]
+set_property ip_output_repo d:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga/vivado.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-add_files C:/Users/67551/Desktop/uart_ram/vivado_fpga/vivado.srcs/dmg_rst.COE
+add_files D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga/vivado.srcs/dmg_rst.COE
 read_verilog -library xil_defaultlib {
-  C:/Users/67551/Desktop/uart_ram/verilog/uart_defines.v
-  C:/Users/67551/Desktop/uart_ram/verilog/uart_baud.v
-  C:/Users/67551/Desktop/uart_ram/verilog/uart_rx.v
-  C:/Users/67551/Desktop/uart_ram/verilog/uart_top.v
-  C:/Users/67551/Desktop/uart_ram/verilog/uart_tx.v
-  C:/Users/67551/Desktop/uart_ram/verilog/uart_ram.v
+  D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/ram_ctrl.v
+  D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_defines.v
+  D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_baud.v
+  D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_rx.v
+  D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_top.v
+  D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_tx.v
+  D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_ram.v
 }
-read_ip -quiet C:/Users/67551/Desktop/uart_ram/vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/dmg_ram.xci
-set_property used_in_implementation false [get_files -all c:/Users/67551/Desktop/uart_ram/vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/dmg_ram_ooc.xdc]
+read_ip -quiet D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/dmg_ram.xci
+set_property used_in_implementation false [get_files -all d:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/dmg_ram_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -50,8 +50,8 @@ set_property used_in_implementation false [get_files -all c:/Users/67551/Desktop
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/67551/Desktop/uart_ram/vivado_fpga/vivado.srcs/constrs_1/new/constrs_1.xdc
-set_property used_in_implementation false [get_files C:/Users/67551/Desktop/uart_ram/vivado_fpga/vivado.srcs/constrs_1/new/constrs_1.xdc]
+read_xdc D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga/vivado.srcs/constrs_1/new/constrs_1.xdc
+set_property used_in_implementation false [get_files D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga/vivado.srcs/constrs_1/new/constrs_1.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
