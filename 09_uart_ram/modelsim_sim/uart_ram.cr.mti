@@ -1,78 +1,81 @@
-C:/Users/67551/Desktop/uart_ram/verilog/uart_top.v {1 {vlog -work work -vopt -stats=none C:/Users/67551/Desktop/uart_ram/verilog/uart_top.v
+D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_rx.v {1 {vlog -work work -vopt -stats=none D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_rx.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module uart_rx
+
+Top level modules:
+	uart_rx
+
+} {} {}} D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_top.v {1 {vlog -work work -vopt -stats=none D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_top.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 -- Compiling module uart_top
 
 Top level modules:
 	uart_top
 
-} {} {}} C:/Users/67551/Desktop/uart_ram/verilog/uart_rx_tb.v {1 {vlog -work work -vopt -stats=none C:/Users/67551/Desktop/uart_ram/verilog/uart_rx_tb.v
-Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module uart_rx_tb
-
-Top level modules:
-	uart_rx_tb
-
-} {} {}} C:/Users/67551/Desktop/uart_ram/verilog/uart_tx.v {1 {vlog -work work -vopt -stats=none C:/Users/67551/Desktop/uart_ram/verilog/uart_tx.v
+} {} {}} D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_tx.v {1 {vlog -work work -vopt -stats=none D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_tx.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 -- Compiling module uart_tx
 
 Top level modules:
 	uart_tx
 
-} {} {}} C:/Users/67551/Desktop/uart_ram/vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/sim/dmg_ram.v {1 {vlog -work work -vopt -stats=none C:/Users/67551/Desktop/uart_ram/vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/sim/dmg_ram.v
-Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module dmg_ram
-
-Top level modules:
-	dmg_ram
-
-} {} {}} C:/Users/67551/Desktop/uart_ram/verilog/uart_ram.v {1 {vlog -work work -vopt -stats=none C:/Users/67551/Desktop/uart_ram/verilog/uart_ram.v
-Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module uart_ram
-
-Top level modules:
-	uart_ram
-
-} {} {}} C:/Users/67551/Desktop/uart_ram/verilog/uart_baud.v {1 {vlog -work work -vopt -stats=none C:/Users/67551/Desktop/uart_ram/verilog/uart_baud.v
-Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module uart_baud
-
-Top level modules:
-	uart_baud
-
-} {} {}} C:/Users/67551/Desktop/uart_ram/verilog/uart_top_tb.v {1 {vlog -work work -vopt -stats=none C:/Users/67551/Desktop/uart_ram/verilog/uart_top_tb.v
-Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module uart_top_tb
-
-Top level modules:
-	uart_top_tb
-
-} {} {}} C:/Users/67551/Desktop/uart_ram/vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/simulation/dist_mem_gen_v8_0.v {1 {vlog -work work -vopt -stats=none C:/Users/67551/Desktop/uart_ram/vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/simulation/dist_mem_gen_v8_0.v
-Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module dist_mem_gen_v8_0_13
-
-Top level modules:
-	dist_mem_gen_v8_0_13
-
-} {} {}} C:/Users/67551/Desktop/uart_ram/verilog/uart_ram_tb.v {1 {vlog -work work -vopt -stats=none C:/Users/67551/Desktop/uart_ram/verilog/uart_ram_tb.v
+} {} {}} D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_ram_tb.v {1 {vlog -work work -vopt -stats=none D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_ram_tb.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 -- Compiling module uart_ram_tb
 
 Top level modules:
 	uart_ram_tb
 
-} {} {}} C:/Users/67551/Desktop/uart_ram/verilog/uart_tx_tb.v {1 {vlog -work work -vopt -stats=none C:/Users/67551/Desktop/uart_ram/verilog/uart_tx_tb.v
+} {} {}} D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_rx_tb.v {1 {vlog -work work -vopt -stats=none D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_rx_tb.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module uart_rx_tb
+
+Top level modules:
+	uart_rx_tb
+
+} {} {}} D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_tx_tb.v {1 {vlog -work work -vopt -stats=none D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_tx_tb.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 -- Compiling module uart_tx_tb
 
 Top level modules:
 	uart_tx_tb
 
-} {} {}} C:/Users/67551/Desktop/uart_ram/verilog/uart_rx.v {1 {vlog -work work -vopt -stats=none C:/Users/67551/Desktop/uart_ram/verilog/uart_rx.v
+} {} {}} D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_baud.v {1 {vlog -work work -vopt -stats=none D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_baud.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module uart_rx
+-- Compiling module uart_baud
 
 Top level modules:
-	uart_rx
+	uart_baud
+
+} {} {}} D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_defines.v {1 {vlog -work work -vopt -stats=none D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_defines.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+
+} {} {}} D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/simulation/dist_mem_gen_v8_0.v {1 {vlog -work work -vopt -stats=none D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/simulation/dist_mem_gen_v8_0.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module dist_mem_gen_v8_0_13
+
+Top level modules:
+	dist_mem_gen_v8_0_13
+
+} {} {}} D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_ram.v {1 {vlog -work work -vopt -stats=none D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_ram.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module uart_ram
+
+Top level modules:
+	uart_ram
+
+} {} {}} D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_top_tb.v {1 {vlog -work work -vopt -stats=none D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_top_tb.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module uart_top_tb
+
+Top level modules:
+	uart_top_tb
+
+} {} {}} D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/ram_ctrl.v {1 {vlog -work work -vopt -stats=none D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/ram_ctrl.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module ram_ctrl
+
+Top level modules:
+	ram_ctrl
 
 } {} {}}
