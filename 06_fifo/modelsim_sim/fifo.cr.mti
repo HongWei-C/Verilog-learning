@@ -1,8 +1,1 @@
-D:/STUDY/GitHubWork/Verilog-learning/06_fifo/verilog/fifo_8_8_syn.v {1 {vlog -work work -vopt -stats=none D:/STUDY/GitHubWork/Verilog-learning/06_fifo/verilog/fifo_8_8_syn.v
-Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module fifo_8_8_syn
 
-Top level modules:
-	fifo_8_8_syn
-
-} {} {}}

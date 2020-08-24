@@ -44,11 +44,19 @@ module fifo_8_8_syn_tb ();
       datain  = datain + 8'h01;
       delay(1);
     end
+		//满，读写同时有效
+		wr				= 1'b1;
+		rd				= 1'b1;
+		delay(1);
     wr        = 1'b0;
     //3.读使能，多读两个无效位来测试empty
     delay(2);
     rd        = 1'b1;
     delay(18);
+		//空，读写同时有效
+		wr				= 1'b1;
+		rd				= 1'b1;
+		delay(1);
     rd        = 1'b0;
     //4.finish
     delay(2);
@@ -60,7 +68,7 @@ module fifo_8_8_syn_tb ();
   wire        empty;
   wire        empty_err;
   wire  [7:0] dataout;
-
+	wire	[4:0]	cnt;
   fifo_8_8_syn fifo_duf (
     .wr       ( wr ),
     .rd       ( rd ),
@@ -71,7 +79,8 @@ module fifo_8_8_syn_tb ();
     .full_err ( full_err ),
     .empty_err( empty_err ),
     .datain   ( datain ),
-    .dataout  ( dataout )
+    .dataout  ( dataout ),
+		.cnt			( cnt)
   );
 
 endmodule

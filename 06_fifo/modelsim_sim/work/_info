@@ -14,15 +14,15 @@ r1
 !s85 0
 31
 !i10b 1
-!s100 KjI4c36j1@UX0abkYo9O63
-IJK^?EaXaV3j3M@:1_XKIf2
+!s100 M;[5O4nfdfcFfT`cGU36o0
+IzZn4[RkYgX^38CCLS?AMe0
 Z1 dD:/STUDY/GitHubWork/Verilog-learning/06_fifo/modelsim_sim
-w1598165788
+w1598238147
 8../verilog/fifo_8_8_syn.v
 F../verilog/fifo_8_8_syn.v
 L0 3
 Z2 OL;L;10.4;61
-!s108 1598166452.444000
+!s108 1598239729.734000
 !s107 ../verilog/fifo_8_8_syn.v|
 !s90 -reportprogress|300|../verilog/fifo_8_8_syn.v|
 !i113 0
@@ -33,16 +33,35 @@ r1
 !s85 0
 31
 !i10b 1
-!s100 <iENm_Q`8zo^]@caUfG=Q2
-I>cb2iT=^;^F[f]cgHo]6>0
+!s100 W[WG:b4LmiD@jQ?`F;cZ<2
+IN<KzS`d@4LAd>@kZjZ4?j3
 R1
-w1598166449
-8../verilog/fifo_8_8_syn_tb.v
-F../verilog/fifo_8_8_syn_tb.v
+w1598232133
+Z4 8../verilog/fifo_8_8_syn_tb_1.v
+Z5 F../verilog/fifo_8_8_syn_tb_1.v
+L0 3
+R2
+!s108 1598239729.791000
+Z6 !s107 ../verilog/fifo_8_8_syn_tb_1.v|
+Z7 !s90 -reportprogress|300|../verilog/fifo_8_8_syn_tb_1.v|
+!i113 0
+R3
+vfifo_8_8_syn_tb_1
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 EdzAbC;BongFNBD0VN;>P1
+I`1VR5XTDE:Fb``LcSFX;90
+R1
+w1598192180
+R4
+R5
 L0 2
 R2
-!s108 1598166452.507000
-!s107 ../verilog/fifo_8_8_syn_tb.v|
-!s90 -reportprogress|300|../verilog/fifo_8_8_syn_tb.v|
+!s108 1598192188.741000
+R6
+R7
 !i113 0
 R3

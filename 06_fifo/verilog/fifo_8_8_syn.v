@@ -10,7 +10,8 @@ module fifo_8_8_syn (
   full_err,
   empty_err,
   datain,
-  dataout
+  dataout,
+	cnt
 );
   `define       DEPTH         16   //fifo_mem深度
   `define       WIDTH         8    //fifo_mem位宽
@@ -26,6 +27,7 @@ module fifo_8_8_syn (
   output                empty_err; //fifo读错误
   input   [`WIDTH-1:0]  datain; //fifo输入
   output  [`WIDTH-1:0]  dataout;//fifo输出
+	output	[`BSIZE-1:0]	cnt;
 
    
   //计算fifo_mem的已用空间,并产生读写fifo_mem地址
@@ -38,17 +40,42 @@ module fifo_8_8_syn (
       wr_addr <= #1 4'b0000;
       rd_addr <= #1 4'b0000;
     end
-    else if ( wr && cnt != `DEPTH ) begin   //写入fifo,且未存满`DEPTH个数据
-      cnt     <= #1 cnt + 5'b0_0001;        //计数器cnt +1
-      wr_addr <= #1 wr_addr + 4'b0001;      //写fifo_addr +1
-      rd_addr <= #1 rd_addr;                //读fifo_addr 不变
-    end
-    else if ( rd && cnt != 0    ) begin     //读取fifo,且fifo_mem不为空
-      cnt     <= #1 cnt - 5'b0_0001;        //计数器cnt -1
-      wr_addr <= #1 wr_addr;                //写fifo_addr 不变
-      rd_addr <= #1 rd_addr + 4'b0001;      //读fifo_addr +1
-    end
-    else begin
+		//读写同时有效
+		else if ( rd && wr ) begin
+			if( cnt == 0 ) begin							//空，只写
+				cnt     <= #1 cnt + 5'b0_0001;        //计数器cnt +1
+				wr_addr <= #1 wr_addr + 4'b0001;      //写fifo_addr +1
+				rd_addr <= #1 rd_addr;                //读fifo_addr 不变
+			end
+			else if ( cnt == `DEPTH ) begin		//满，只读
+				cnt     <= #1 cnt - 5'b0_0001;        //计数器cnt -1
+				wr_addr <= #1 wr_addr;                //写fifo_addr 不变
+				rd_addr <= #1 rd_addr + 4'b0001;      //读fifo_addr +1
+			end
+			else begin												//非空非满，同时读写
+				cnt     <= #1 cnt;
+				wr_addr <= #1 wr_addr + 4'b0001;
+				rd_addr <= #1 rd_addr	+ 4'b0001;
+			end
+		end
+		//仅写有效
+		else if ( ~rd && wr ) begin
+			if( cnt != `DEPTH ) begin					//非满，只写，满则保持
+				cnt     <= #1 cnt + 5'b0_0001;        //计数器cnt +1
+				wr_addr <= #1 wr_addr + 4'b0001;      //写fifo_addr +1
+				rd_addr <= #1 rd_addr;                //读fifo_addr 不变
+			end
+		end
+		//仅读有效
+		else if ( rd && ~wr ) begin
+			if ( cnt != 0 ) begin							//非空，只读，空则保持
+				cnt     <= #1 cnt - 5'b0_0001;        //计数器cnt -1
+				wr_addr <= #1 wr_addr;                //写fifo_addr 不变
+				rd_addr <= #1 rd_addr + 4'b0001;      //读fifo_addr +1
+			end
+		end
+		//读写均无效，不读不写
+		else begin
       cnt     <= #1 cnt;
       wr_addr <= #1 wr_addr;
       rd_addr <= #1 rd_addr;
@@ -57,11 +84,8 @@ module fifo_8_8_syn (
 
   //fifo write 
   reg   [`WIDTH-1:0]   fifo_mem  [0:`DEPTH-1];  
-  always @ ( posedge clk or negedge rst_n ) begin
-    if ( ~rst_n ) begin
-      $readmemb ( "fifo_mem_rst.txt", fifo_mem );
-    end
-    else if ( wr && cnt != `DEPTH ) begin
+  always @ ( posedge clk ) begin
+    if ( wr && cnt != `DEPTH ) begin
       fifo_mem[wr_addr] <= #1 datain;
     end
     else begin
@@ -90,13 +114,13 @@ module fifo_8_8_syn (
   reg   [`WIDTH-1:0]   dataout;  
   always @ ( posedge clk or negedge rst_n ) begin
     if ( ~rst_n ) begin
-      dataout     <= #1 8'bz;
+      dataout     <= #1 8'b0;
     end
     else if ( rd && cnt != 0    ) begin
       dataout     <= #1 fifo_mem[rd_addr];
     end
     else begin
-      dataout     <= #1 8'bz;
+      dataout     <= #1 dataout;
     end
   end
   //fifo read control-empty
