@@ -4,7 +4,7 @@
 //宏定义
 `define SYS_CLOCK 100000000 //定义了使用的系统时钟频率100MHz
 //仿真时用，写入FPGA时注释掉
-//`define FAST_SIM  
+`define FAST_SIM  
 
 `ifdef  FAST_SIM
   `define BAUDRATE  1562500  //仿真时用

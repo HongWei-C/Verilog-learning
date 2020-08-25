@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Sun Aug 23 16:49:56 2020
+| Date         : Tue Aug 25 17:21:20 2020
 | Host         : LAPTOP-E1JQUC07 running 64-bit major release  (build 9200)
 | Command      : report_drc -file uart_ram_drc_routed.rpt -pb uart_ram_drc_routed.pb -rpx uart_ram_drc_routed.rpx
 | Design       : uart_ram
@@ -49,12 +49,12 @@ Related violations: <none>
 
 PDRC-153#1 Warning
 Gated clock check  
-Net top_to_ram/top_rx/rxd_nege is a gated clock net sourced by a combinational pin top_to_ram/top_rx/rx_start_reg_LDC_i_1/O, cell top_to_ram/top_rx/rx_start_reg_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net ctrl_for_ram/tx_ready_u is a gated clock net sourced by a combinational pin ctrl_for_ram/tx_start_reg_LDC_i_1/O, cell ctrl_for_ram/tx_start_reg_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#2 Warning
 Gated clock check  
-Net top_to_ram/top_tx/txd_pose is a gated clock net sourced by a combinational pin top_to_ram/top_tx//i_/O, cell top_to_ram/top_tx//i_. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net top_to_ram/top_rx/rxd_nege is a gated clock net sourced by a combinational pin top_to_ram/top_rx/rx_start_reg_LDC_i_1/O, cell top_to_ram/top_rx/rx_start_reg_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 

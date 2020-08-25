@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Sun Aug 23 16:49:57 2020
+| Date         : Tue Aug 25 17:21:21 2020
 | Host         : LAPTOP-E1JQUC07 running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file uart_ram_timing_summary_routed.rpt -pb uart_ram_timing_summary_routed.pb -rpx uart_ram_timing_summary_routed.rpx -warn_on_violation
 | Design       : uart_ram
@@ -55,6 +55,10 @@ Table of Contents
 --------------------
  There are 105 register/latch pins with no clock driven by root clock pin: sys_clk (HIGH)
 
+ There is 1 register/latch pin with no clock driven by root clock pin: ctrl_for_ram/tx_ready_r1_reg[0]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: ctrl_for_ram/tx_ready_r1_reg[1]/Q (HIGH)
+
  There are 32 register/latch pins with no clock driven by root clock pin: top_to_ram/top_rx/rx_bits_ok_reg/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: top_to_ram/top_rx/rxd_d_reg[0]/Q (HIGH)
@@ -62,10 +66,6 @@ Table of Contents
  There is 1 register/latch pin with no clock driven by root clock pin: top_to_ram/top_rx/rxd_d_reg[1]/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: top_to_ram/top_tx/tx_bits_ok_reg/Q (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: top_to_ram/top_tx/tx_st_reg[0]/Q (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: top_to_ram/top_tx/tx_st_reg[1]/Q (HIGH)
 
 
 2. checking constant_clock

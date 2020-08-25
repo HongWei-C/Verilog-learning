@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sun Aug 23 16:48:48 2020
-# Process ID: 16624
+# Start of session at: Tue Aug 25 17:20:15 2020
+# Process ID: 2964
 # Current directory: D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga/vivado.runs/impl_1
 # Command line: vivado.exe -log uart_ram.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source uart_ram.tcl -notrace
 # Log file: D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga/vivado.runs/impl_1/uart_ram.vdi

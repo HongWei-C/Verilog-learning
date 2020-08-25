@@ -1,0 +1,161 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Aug 23 16:47:18 2020
+# Process ID: 16580
+# Current directory: D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5392 D:\STUDY\GitHubWork\Verilog-learning\09_uart_ram\vivado_fpga\vivado.xpr
+# Log file: D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga/vivado.log
+# Journal file: D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga/vivado.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/STUDY/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:08 . Memory (MB): peak = 809.488 ; gain = 169.762
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Aug 23 16:47:56 2020] Launched synth_1...
+Run output will be captured here: D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga/vivado.runs/synth_1/runme.log
+[Sun Aug 23 16:47:56 2020] Launched impl_1...
+Run output will be captured here: D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga/vivado.runs/impl_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: uart_ram
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1272.824 ; gain = 166.395
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'uart_ram' [D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_ram.v:2]
+INFO: [Synth 8-6157] synthesizing module 'uart_top' [D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_top.v:2]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_rx.v:3]
+	Parameter rx_dly bound to: 1 - type: integer 
+	Parameter NULL bound to: 4'b0000 
+	Parameter IDLE bound to: 4'b0001 
+	Parameter START bound to: 4'b0010 
+	Parameter BIT0 bound to: 4'b0011 
+	Parameter BIT1 bound to: 4'b0100 
+	Parameter BIT2 bound to: 4'b0101 
+	Parameter BIT3 bound to: 4'b0110 
+	Parameter BIT4 bound to: 4'b0111 
+	Parameter BIT5 bound to: 4'b1000 
+	Parameter BIT6 bound to: 4'b1001 
+	Parameter BIT7 bound to: 4'b1010 
+	Parameter STOP bound to: 4'b1100 
+INFO: [Synth 8-6157] synthesizing module 'uart_baud' [D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_baud.v:3]
+	Parameter fre_mul bound to: 16 - type: integer 
+	Parameter cnt_tmp bound to: 54 - type: integer 
+	Parameter cnt_max bound to: 54 - type: integer 
+	Parameter cnt_half bound to: 27 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_baud' (1#1) [D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_baud.v:3]
+INFO: [Synth 8-5837] Detected dual asynchronous set and preset for register rx_start_reg in module uart_rx. This is not a recommended register style for Xilinx devices  [D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_rx.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (2#1) [D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_rx.v:3]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_tx.v:3]
+	Parameter tx_dly bound to: 1 - type: integer 
+	Parameter NULL bound to: 4'b0000 
+	Parameter IDLE bound to: 4'b0001 
+	Parameter START bound to: 4'b0010 
+	Parameter BIT0 bound to: 4'b0011 
+	Parameter BIT1 bound to: 4'b0100 
+	Parameter BIT2 bound to: 4'b0101 
+	Parameter BIT3 bound to: 4'b0110 
+	Parameter BIT4 bound to: 4'b0111 
+	Parameter BIT5 bound to: 4'b1000 
+	Parameter BIT6 bound to: 4'b1001 
+	Parameter BIT7 bound to: 4'b1010 
+	Parameter STOP bound to: 4'b1100 
+INFO: [Synth 8-6157] synthesizing module 'uart_baud__parameterized0' [D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_baud.v:3]
+	Parameter fre_mul bound to: 1 - type: integer 
+	Parameter cnt_tmp bound to: 54 - type: integer 
+	Parameter cnt_max bound to: 864 - type: integer 
+	Parameter cnt_half bound to: 432 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_baud__parameterized0' (2#1) [D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_baud.v:3]
+INFO: [Synth 8-5837] Detected dual asynchronous set and preset for register tx_start_reg in module uart_tx. This is not a recommended register style for Xilinx devices  [D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_tx.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (3#1) [D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_tx.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'uart_top' (4#1) [D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_top.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ram_ctrl' [D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/ram_ctrl.v:1]
+	Parameter NULL bound to: 3'b000 
+	Parameter COMD bound to: 3'b001 
+	Parameter R_ADDR bound to: 3'b010 
+	Parameter W_ADDR bound to: 3'b011 
+	Parameter W_DATA bound to: 3'b100 
+	Parameter en_dly bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ram_ctrl' (5#1) [D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/ram_ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dmg_ram' [D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga/.Xil/Vivado-16580-LAPTOP-E1JQUC07/realtime/dmg_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dmg_ram' (6#1) [D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga/.Xil/Vivado-16580-LAPTOP-E1JQUC07/realtime/dmg_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'uart_ram' (7#1) [D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/verilog/uart_ram.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1317.344 ; gain = 210.914
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1317.344 ; gain = 210.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1317.344 ; gain = 210.914
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/dmg_ram.dcp' for cell 'sram_t'
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga/vivado.srcs/constrs_1/new/constrs_1.xdc]
+Finished Parsing XDC File [D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga/vivado.srcs/constrs_1/new/constrs_1.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1459.371 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 8 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 1469.848 ; gain = 363.418
+27 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:18 . Memory (MB): peak = 1469.848 ; gain = 571.125
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274533183A
+set_property PROGRAM.FILE {D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga/vivado.runs/impl_1/uart_ram.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga/vivado.runs/impl_1/uart_ram.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Aug 23 16:57:37 2020...

@@ -2,11 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sun Aug  2 22:11:48 2020
-# Process ID: 18152
-# Current directory: C:/Users/67551/Desktop/uart_ram/vivado_fpga/vivado.runs/dmg_ram_synth_1
+# Start of session at: Tue Aug 25 17:19:21 2020
+# Process ID: 6644
+# Current directory: D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga/vivado.runs/dmg_ram_synth_1
 # Command line: vivado.exe -log dmg_ram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dmg_ram.tcl
-# Log file: C:/Users/67551/Desktop/uart_ram/vivado_fpga/vivado.runs/dmg_ram_synth_1/dmg_ram.vds
-# Journal file: C:/Users/67551/Desktop/uart_ram/vivado_fpga/vivado.runs/dmg_ram_synth_1\vivado.jou
+# Log file: D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga/vivado.runs/dmg_ram_synth_1/dmg_ram.vds
+# Journal file: D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga/vivado.runs/dmg_ram_synth_1\vivado.jou
 #-----------------------------------------------------------
 source dmg_ram.tcl -notrace

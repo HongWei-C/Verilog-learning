@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
 -- Date        : Sun Aug  2 22:12:28 2020
 -- Host        : LAPTOP-E1JQUC07 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/67551/Desktop/uart_ram/vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/dmg_ram_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top dmg_ram -prefix
+--               dmg_ram_ dmg_ram_sim_netlist.vhdl
 -- Design      : dmg_ram
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -22,8 +22,6 @@ entity dmg_ram_spram is
     we : in STD_LOGIC;
     a : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of dmg_ram_spram : entity is "spram";
 end dmg_ram_spram;
 
 architecture STRUCTURE of dmg_ram_spram is
@@ -240,8 +238,6 @@ entity dmg_ram_dist_mem_gen_v8_0_13_synth is
     we : in STD_LOGIC;
     a : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of dmg_ram_dist_mem_gen_v8_0_13_synth : entity is "dist_mem_gen_v8_0_13_synth";
 end dmg_ram_dist_mem_gen_v8_0_13_synth;
 
 architecture STRUCTURE of dmg_ram_dist_mem_gen_v8_0_13_synth is
@@ -343,8 +339,6 @@ entity dmg_ram_dist_mem_gen_v8_0_13 is
   attribute C_SYNC_ENABLE of dmg_ram_dist_mem_gen_v8_0_13 : entity is 1;
   attribute C_WIDTH : integer;
   attribute C_WIDTH of dmg_ram_dist_mem_gen_v8_0_13 : entity is 8;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of dmg_ram_dist_mem_gen_v8_0_13 : entity is "dist_mem_gen_v8_0_13";
 end dmg_ram_dist_mem_gen_v8_0_13;
 
 architecture STRUCTURE of dmg_ram_dist_mem_gen_v8_0_13 is

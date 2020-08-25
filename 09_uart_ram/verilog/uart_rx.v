@@ -64,7 +64,7 @@ module uart_rx (
 	 //两级延迟，滤除小毛刺
 	parameter					rx_dly = 1;		//最小为1,控制rx_start延迟产生时间
 	reg		[rx_dly:0]	rxd_d;				//rx_dly个sys_clk
-	always @ ( posedge sys_clk or negedge rst_n ) begin
+	always @ ( negedge sys_clk or negedge rst_n ) begin
     if ( ~rst_n ) begin
       rxd_d <= { (rx_dly+1) {1'b1}};
     end
@@ -73,15 +73,16 @@ module uart_rx (
     end
   end
   //防止在START或BITx等未接收完的状态下产生rx_start信号
+	//同时，产生一个稳定的可以用于接收的rx_start信号
   assign  rxd_nege  = rx_bits_ok ? ( rxd_d[0] & ~rxd_d[1] ) : 1'b0;
-  always @ ( posedge rxd_nege or posedge sys_clk or negedge rst_n ) begin
+  always @ ( posedge rxd_nege or negedge sys_clk or negedge rst_n ) begin
     if ( ~rst_n ) begin
       rx_start    <= 1'b0;
     end
     else if ( rxd_nege ) begin
       rx_start    <= 1'b1;				//RXD下降沿拉高rx_start
     end
-    else if ( ~(|cnt_16x) ) begin	//cnt_16x数到1才释放rx_start
+    else if ( ~(|cnt_16x) ) begin	//cnt_16x数到0才释放rx_start
       rx_start    <= 1'b0;				//使其持续时间略大于半个bps_clk周期
     end
     else begin

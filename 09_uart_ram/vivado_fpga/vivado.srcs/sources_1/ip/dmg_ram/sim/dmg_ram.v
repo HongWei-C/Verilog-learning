@@ -88,7 +88,7 @@ output wire [7 : 0] spo;
     .C_HAS_QSPO_SRST(0),
     .C_HAS_SPO(1),
     .C_HAS_WE(1),
-    .C_MEM_INIT_FILE("./dmg_ram.mif"),
+    .C_MEM_INIT_FILE("D:/STUDY/GitHubWork/Verilog-learning/09_uart_ram/vivado_fpga/vivado.srcs/sources_1/ip/dmg_ram/sim/dmg_ram.mif"),
     .C_ELABORATION_DIR("./"),
     .C_MEM_TYPE(1),
     .C_PIPELINE_STAGES(0),

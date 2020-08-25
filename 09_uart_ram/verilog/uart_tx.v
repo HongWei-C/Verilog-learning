@@ -23,11 +23,8 @@ module uart_tx (
   //利用外部传入的tx_ready产生tx_start信号，且tx_start只会出现在STOP/IDLE状态
   wire            rst_n;
   wire            sys_clk;
-  wire            tx_ready;
-  wire            txd_pose;   //tx_ready上升沿脉冲
   wire            bps_clk_up;
-  reg             tx_start;   //发送启动信号，持续到下一个bps_clk上升沿
-	
+
 	//波特率1x倍频
 	uart_baud	#(
 		.fre_mul		(1)
@@ -39,32 +36,23 @@ module uart_tx (
 		.bps_clk_up	(bps_clk_up)             
 	);
 
-	//保证每一个tx_ready信号只发送一次数据，相当于检测tx_ready信号上升沿
-  //两级延迟，滤除小毛刺
-	parameter					tx_dly	= 1;		//最小为1,控制rx_start延迟产生时间
-	reg		[tx_dly:0]  tx_st;					//tx_dly个sys_clk
-	always @ ( posedge sys_clk or negedge rst_n ) begin
-    if ( ~rst_n ) begin
-      tx_st	    <= { (tx_dly+1) {1'b0}};
-    end
-    else begin
-      tx_st	    <= { tx_ready , tx_st[tx_dly:1] };
-    end
-  end
-	//滤除无效的tx_ready信号上升沿
-  assign  txd_pose  = tx_bits_ok ? ( tx_st[1] & ~tx_st[0] ) : 1'b0;
-  always @ ( posedge txd_pose or posedge sys_clk or negedge rst_n ) begin
+	//滤除无效的tx_ready信号,非stop/idle状态下的ready信号
+  wire            tx_ready;
+  wire            tx_ready_u;   //tx_ready的有效信号
+  reg             tx_start;			//发送启动信号，持续到下一个bps_clk上升沿
+  assign  tx_ready_u  = tx_bits_ok ? tx_ready : 1'b0;//tx_ready只有在stop/idle状态下才真正有效
+  always @ ( posedge tx_ready_u or posedge sys_clk or negedge rst_n ) begin
     if ( ~rst_n ) begin
       tx_start  <= 1'b0;
     end
-    else if ( txd_pose ) begin
-      tx_start  <= 1'b1;      //tx_ready上升沿
+    else if ( tx_ready_u ) begin
+      tx_start  <= 1'b1;      //tx_ready的有效信号
     end
     else if ( bps_clk_up ) begin
-      tx_start  <= 1'b0;      //直到下一个bps_clk_up下升沿
+      tx_start  <= 1'b0;      //直到下一个bps_clk_up下升沿前
     end												//bps_clk_up由sys_clk产生，持续一个sys_clk周期
-    else begin								//故，第一个sys_clk_up对应bps_clk上升沿前，
-      tx_start  <= tx_start;	//第二个sys_clk_up对应bps_clk下降沿前
+    else begin								//故，前一个sys_clk_up对应bps_clk上升沿前，
+      tx_start  <= tx_start;	//后一个sys_clk_up对应bps_clk下降沿前
     end
   end
   

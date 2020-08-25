@@ -120,10 +120,10 @@ module ram_ctrl (
     end
   end
 
-  parameter	en_dly = 2;											//用于控制en使能信号相对于数据的延迟(en_dly个sys_clk)
+  parameter	en_dly = 3;											//用于控制en使能信号相对于数据的延迟(en_dly个sys_clk)
   reg			[en_dly-1:0]	tx_ready_r1;        //uart发送信号节拍延迟
 	reg			[en_dly-1:0]	ram_write_r1;       //ram写信号节拍延迟
-  always @ ( posedge sys_clk or negedge rst_n ) begin
+  always @ ( negedge sys_clk or negedge rst_n ) begin //在下降沿生成使能，使能上升沿能采到稳定的使能信号
     if ( ~rst_n ) begin
 			tx_ready_r1   <= {en_dly{1'b0}};
 			ram_write_r1  <= {en_dly{1'b0}};
@@ -138,9 +138,9 @@ module ram_ctrl (
   wire    [7:0] ram_addr;						//ram地址线(连接ram)
   wire    [7:0] ram_datain;					//ram写数据线(连接ram)
   wire    [7:0] ram_dataout;				//ram读数据线(连接ram)
-  //将节拍延迟的发送数据准备信号连上
-  assign  tx_ready    = tx_ready_r1[0];
-  assign  ram_write   = ram_write_r1[0];
+  //将节拍延迟的发送数据准备信号连上,保持一个sys_clk
+  assign  tx_ready    = tx_ready_r1[1]	& ~tx_ready_r1[0];	//保证仅一次sys_clk周期有效，防止多次写入
+  assign  ram_write   = ram_write_r1[1]	& ~ram_write_r1[0];	//
   assign  ram_addr    = ram_addr_r;
   assign  ram_datain  = ram_datain_r;
 
